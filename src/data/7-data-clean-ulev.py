@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 #Loading data files containing transportation features
-travel = pd.read_csv("../../data/processed/msoa/trip_ends_msoa.csv")
+travel = pd.read_csv("../../data/interim/msoa/trip_ends_msoa.csv")
 travel.msoa11nm = travel.msoa11nm.apply(lambda x: x.replace("`","'"))
 
 
@@ -13,7 +13,7 @@ ulev = pd.read_excel("../../data/raw/ev_registration/veh0132.xlsx",header=1,skip
 
 
 
-lad2msoa = pd.read_csv("../../data/processed/lsoa_msoa.csv")
+lad2msoa = pd.read_csv("../../data/interim/lsoa_msoa.csv")
 lad2msoa = lad2msoa.drop(['lsoa11cd','lsoa11nm','pcds','region'],axis=1)
 lad2msoa = lad2msoa.drop_duplicates()
 lad2msoa = lad2msoa.set_index(['msoa11cd','msoa11nm'])
@@ -46,4 +46,4 @@ travel['growth'] = travel['2019_q2']-travel['2011_q4']
 travel['growth'] = travel['growth'].apply(lambda x : 0 if x < 0 else x)
 
 
-travel.to_csv("../../data/processed/msoa/travel_ulev.csv",index=False)
+travel.to_csv("../../data/interim/msoa/travel_ulev.csv",index=False)

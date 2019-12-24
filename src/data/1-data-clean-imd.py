@@ -45,7 +45,7 @@ imd_columns = ['lsoa11cd', 'lsoa11nm',  'msoa11nm', 'msoa11cd','lad13cd', 'lad13
 imd = imd[imd_columns]
 
 #Saving to csv file
-imd.to_csv("../../data/processed/lsoa/imd_lsoa.csv",index=False)
+imd.to_csv("../../data/interim/lsoa/imd_lsoa.csv",index=False)
 
 #Creating imd_msoa aggregations
 imd = imd.set_index(['lsoa11cd', 'lsoa11nm',  'msoa11nm', 'msoa11cd','lad13cd', 'lad13nm'])
@@ -57,6 +57,6 @@ imd3 = imd.groupby(['msoa11nm', 'msoa11cd','lad13cd', 'lad13nm']).agg('sum').ilo
 imd_msoa = pd.concat([imd1,imd2,imd3],axis=1).reset_index()
 
 #Saving to csv file
-imd_msoa.to_csv("../../data/processed/msoa/imd_msoa.csv",index=False)
+imd_msoa.to_csv("../../data/interim/msoa/imd_msoa.csv",index=False)
 
 print(imd_msoa.head())

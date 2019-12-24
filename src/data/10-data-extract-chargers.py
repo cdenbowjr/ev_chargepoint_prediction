@@ -94,7 +94,7 @@ postcode_replace = ['306', '462', '1198', '1342', '1390', '1499', '1601', '1607'
                     '3345', '3493', '3767', '3881', '4264', '4488', '4498', '4942', '5056', '5059', '5128', '5410', '5736',
                     '5779', '6182', '6185', '6197', '6582', '7465', '7590', '7781', '7811', '7814', '7817']
 
-missing_post = pd.read_excel('../../data/processed/find_postcodes.xlsx',index_col=0,usecols=[0,1,2,3,4,5])
+missing_post = pd.read_excel('../../data/interim/find_postcodes.xlsx',index_col=0,usecols=[0,1,2,3,4,5])
 missing_post = missing_post.google_address.apply(lambda x : " ".join(x[-10:].split(" ")[-2:]) if len(x[-10:].split(" "))>1 else x)[3:]
 missing_post.index = charge_points.loc[postcode_replace,:]['Postcode'].index 
 
@@ -111,7 +111,7 @@ charge_points.loc['7817','Postcode'] = 'DH5 9EN'
 
 # In[5]:
 #Merging post codes
-postcode_data = pd.read_csv("../../data/processed/lsoa_msoa.csv")
+postcode_data = pd.read_csv("../../data/interim/lsoa_msoa.csv")
 postcode_data = postcode_data[['lsoa11cd','lsoa11nm','msoa11cd','msoa11nm','ladcd','ladnm','pcds','region','oa11cd']].drop_duplicates(keep='first').reset_index(drop=True)
 
 charge_points_map = pd.merge(postcode_data,charge_points,how = 'right',right_on='Postcode',left_on = 'pcds')
@@ -123,8 +123,8 @@ charge_points_map = charge_points_map[(charge_points_map.pcds.notna())&(charge_p
 
 # In[8]:
 charge_points_lsoa = charge_points_map.groupby(['lsoa11cd','lsoa11nm','msoa11cd','msoa11nm','ladcd','ladnm','region']).agg({'charge_points':sum})
-charge_points_lsoa.to_csv("../../data/processed/lsoa/chargepoints_lsoa.csv",index=True)
+charge_points_lsoa.to_csv("../../data/interim/lsoa/chargepoints_lsoa.csv",index=True)
 
 # In[10]:
 charge_points_msoa = charge_points_map.groupby(['msoa11cd','msoa11nm','ladcd','ladnm','region']).agg({'charge_points':sum})
-charge_points_msoa.to_csv("../../data/processed/msoa/chargepoints_msoa.csv",index=True)
+charge_points_msoa.to_csv("../../data/interim/msoa/chargepoints_msoa.csv",index=True)

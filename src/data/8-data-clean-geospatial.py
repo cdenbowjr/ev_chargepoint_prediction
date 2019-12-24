@@ -59,11 +59,11 @@ lsoa_json.columns = [x.split(".")[1] if len(x.split("."))==2 else x for x in lso
 lsoa_json = lsoa_json[['lsoa11cd','lsoa11nm']]
 
 geospatial_lsoa = pd.concat([lsoa_json[['lsoa11cd','lsoa11nm']],num_parks,park_distance,num_parking,parking_distance,num_train_st,train_st_distance,num_gas_st,gas_st_distance,num_hotels,hotel_distance,num_supermarkets,supermarkets_distance],axis=1).fillna(0)
-geospatial_lsoa.to_csv('../../data/processed/lsoa/geo_spatial_lsoa.csv',index=False)
+geospatial_lsoa.to_csv('../../data/interim/lsoa/geo_spatial_lsoa.csv',index=False)
 
 
 #Extract MSOA data for each LSOA
-lsoa2msoa = pd.read_csv("../../data/processed/lsoa_msoa.csv")
+lsoa2msoa = pd.read_csv("../../data/interim/lsoa_msoa.csv")
 lsoa2msoa = lsoa2msoa[['lsoa11cd','lsoa11nm','msoa11nm','msoa11cd']].drop_duplicates(keep='first')
 
 geospatial_msoa = pd.merge(lsoa2msoa,geospatial_lsoa,left_on=['lsoa11cd','lsoa11nm'],right_on=['lsoa11cd','lsoa11nm'])
@@ -73,4 +73,4 @@ geo2 = geospatial_msoa.groupby(['msoa11nm','msoa11cd']).agg('mean').iloc[:,1::2]
 
 geospatial_msoa = pd.concat([geo1,geo2],axis=1).reset_index()
 
-geospatial_msoa.to_csv('../../data/processed/msoa/geo_spatial_msoa.csv',index=False)
+geospatial_msoa.to_csv('../../data/interim/msoa/geo_spatial_msoa.csv',index=False)

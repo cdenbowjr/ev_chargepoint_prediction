@@ -67,7 +67,7 @@ for folder in list_of_folders:
         
         prime_df = pd.merge(final_df,df2,on=['msoa11cd','msoa11nm'])
         
-        prime_df.to_csv("../../data/processed/msoa/trip_ends/"+travel[:-4]+"csv")
+        prime_df.to_csv("../../data/interim/msoa/trip_ends/"+travel[:-4]+"csv")
 
 
 #print(final_df.head())

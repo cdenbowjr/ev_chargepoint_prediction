@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 #Loading data files containing socio-economic features
-imd = pd.read_csv("../../data/processed/msoa/imd_msoa.csv")
+imd = pd.read_csv("../../data/interim/msoa/imd_msoa.csv")
 
 imd = imd[['msoa11nm', 'msoa11cd','lad13cd', 'lad13nm', 'income_score',
        'employment_score', 'education_score', 'health_score', 'crime_score',
@@ -12,23 +12,23 @@ imd = imd[['msoa11nm', 'msoa11cd','lad13cd', 'lad13nm', 'income_score',
        'indoor_score', 'outdoor_score', 'total_pop', 'under16_pop', '16_59_pop',
        'over60_pop', 'workingage_pop']]
 
-income = pd.read_csv("../../data/processed/msoa/income_msoa.csv")
+income = pd.read_csv("../../data/interim/msoa/income_msoa.csv")
 
 
 #Loading data files containing transportation features
-travel = pd.read_csv("../../data/processed/msoa/travel_ulev.csv")
+travel = pd.read_csv("../../data/interim/msoa/travel_ulev.csv")
 travel.msoa11nm = travel.msoa11nm.apply(lambda x: x.replace("`","'"))
 
 #Loading data files containing geo-spatial features
-area_perimeter = pd.read_csv("../../data/processed/msoa/area_perimeter_msoa.csv")
-geo = pd.read_csv("../../data/processed/msoa/geo_spatial_msoa.csv")
+area_perimeter = pd.read_csv("../../data/interim/msoa/area_perimeter_msoa.csv")
+geo = pd.read_csv("../../data/interim/msoa/geo_spatial_msoa.csv")
 
 
 #Loading electricity consumption files
-electricity = pd.read_csv("../../data/processed/msoa/electricity_msoa.csv")
+electricity = pd.read_csv("../../data/interim/msoa/electricity_msoa.csv")
 
 #Loading data files containing target variable
-chargers = pd.read_csv("../../data/processed/msoa/chargepoints_msoa.csv")
+chargers = pd.read_csv("../../data/interim/msoa/chargepoints_msoa.csv")
 chargers = chargers[['msoa11cd','msoa11nm','charge_points']]
 
 #Merging imd with income
@@ -85,4 +85,4 @@ new_cols = list(full.iloc[:,:213].columns)+list(full.iloc[:,214:-2].columns)+lis
 
 full = full[new_cols]
 
-full.to_csv("../../data/processed/msoa/full_dataset_msoa.csv",index=False)
+full.to_csv("../../data/interim/msoa/full_dataset_msoa.csv",index=False)

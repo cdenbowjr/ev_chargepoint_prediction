@@ -31,8 +31,8 @@ msoa_json = msoa_json[['msoa11cd','msoa11nm','st_areashape','st_lengthshape']]
 lsoa_json = lsoa_json[['lsoa11cd','lsoa11nm','st_areasha','st_lengths']]
 
 #Save file to csv
-msoa_json.to_csv("../../data/processed/msoa/area_perimeter_msoa.csv",index=False)
-lsoa_json.to_csv("../../data/processed/lsoa/area_perimeter_lsoa.csv",index=False)
+msoa_json.to_csv("../../data/interim/msoa/area_perimeter_msoa.csv",index=False)
+lsoa_json.to_csv("../../data/interim/lsoa/area_perimeter_lsoa.csv",index=False)
 
 print(msoa_json.head())
 print(lsoa_json.head())

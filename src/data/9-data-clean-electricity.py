@@ -31,4 +31,4 @@ elec_con['residential_mdn_ratio'] = elec_con.elec_d_con_mdn/elec_con.elec_nd_con
 elec_con['residential_mean_ratio'] = elec_con.elec_d_con_mean/elec_con.elec_nd_con_mean
 
 #Saving to csv file
-elec_con.to_csv("../../data/processed/msoa/electricity_msoa.csv",index=False)
+elec_con.to_csv("../../data/interim/msoa/electricity_msoa.csv",index=False)

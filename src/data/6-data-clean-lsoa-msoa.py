@@ -15,4 +15,4 @@ filters = lsoa2msoa.msoa11cd.apply(lambda x : False if ('S' in str(x)) or ('L' i
 
 lsoa2msoa = lsoa2msoa[filters].dropna()
 
-lsoa2msoa.sort_index().to_csv("../../data/processed/lsoa_msoa.csv",index=False)
+lsoa2msoa.sort_index().to_csv("../../data/interim/lsoa_msoa.csv",index=False)
