@@ -1,7 +1,48 @@
-predicting_ev_chargepoints
-==============================
+# Predicting Electric Vehicle Charge points locations in Britain
 
-This project is about predicting EV chargepoints in England
+<img src="https://i.cbc.ca/1.4415731.1511448387!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/electric-vehicle-charged.jpg"/>
+
+------
+
+## Summary
+
+**This project entailed the building of a machine learning classification model for predicting EV charge point locations based on socio-economic, transportation and geo-spatial characteristics acquired from public and government data.**
+
+It further explored areas of potential for new EV charge point installations using the unsupervised KMeans algorithm to cluster areas with favorable characteristics. 
+
+Raw data was preprocessed in order to ultimately train and test a Logistic Regression classifier and statistical testing of feature coefficients were done to confirm the factors that increased and decreased the likelihood of EV charge point installation. 
+
+------
+
+Preliminary results showed that the probability of an EV charge point being located in an area:
+
+<u>Increases</u>
+
+1. As the number of journeys people took to conduct employers business by car increases
+2. As the number of EV car registrations increased in 2018
+
+<u>Decreases</u>
+
+1. As the quality of housing in that area decreases
+2. As the deprivation of adult skills set increases
+
+
+
+### Document Navigator
+
+<table>
+    <tr>
+        <td><a href="business_problem.md#the-business-problem">The Business Problem</a></td>
+        <td>Exploratory Data Analysis (EDA)</td>
+        <td>Analysis</td>
+    </tr>
+    <tr>
+        <td><a href="data.md#data--methodology">Data & Methodology</a></td>
+        <td>Modelling & Evaluation</td>
+        <td>Findings & Conclusions</td>
+    </tr>
+
+
 
 Project Organization
 ------------
@@ -50,7 +91,6 @@ Project Organization
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
-
 
 --------
 
