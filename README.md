@@ -30,26 +30,14 @@ Preliminary results showed that the probability of an EV charge point being loca
 
 ### Document Navigator
 
-| <a href="business_problem.md#the-business-problem">The Business Problem</a> | Exploratory Data Analysis (EDA) | Analysis               |
+|                                                              |                                 |                        |
 | ------------------------------------------------------------ | ------------------------------- | ---------------------- |
+| <a href="business_problem.md#the-business-problem">The Business Problem</a> | Exploratory Data Analysis (EDA) | Analysis               |
 | <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation          | Findings & Conclusions |
 
-<table>
-    <tr>
-        <td><a href="business_problem.md#the-business-problem">The Business Problem</a></td>
-        <td>Exploratory Data Analysis (EDA)</td>
-        <td>Analysis</td>
-    </tr>
-    <tr>
-        <td><a href="data.md#data--methodology">Data & Methodology</a></td>
-        <td>Modelling & Evaluation</td>
-        <td>Findings & Conclusions</td>
-    </tr>
 
 
-
-Project Organization
-------------
+## Project Organization
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
