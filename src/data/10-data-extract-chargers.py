@@ -119,7 +119,7 @@ charge_points_map = pd.merge(postcode_data,charge_points,how = 'right',right_on=
 
 # In[7]:
 charge_points_map = charge_points_map[(charge_points_map.pcds.notna())&(charge_points_map.region == 'England')]
-
+charge_points_map.to_csv("../../data/interim/chargepoints_full.csv",index=False)
 
 # In[8]:
 charge_points_lsoa = charge_points_map.groupby(['lsoa11cd','lsoa11nm','msoa11cd','msoa11nm','ladcd','ladnm','region']).agg({'charge_points':sum})
