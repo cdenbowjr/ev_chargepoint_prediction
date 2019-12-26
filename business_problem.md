@@ -13,7 +13,7 @@
 
 ------
 
-<img src="/images/decarbonisation_challenging.jpg" alt = "decarbonise_transport" width=100%/>
+<img src="/reports/figures/decarbonisation_challenging.jpg" alt = "decarbonise_transport" width=100%/>
 
 
 
@@ -36,7 +36,7 @@
 
 ------
 
-### What is one solution?<img src="/images/switch_electric.jpg" alt="switch_to_electric" width=100%/>
+### What is one solution?<img src="/reports/figures/switch_electric.jpg" alt="switch_to_electric" width=100%/>
 
 
 
@@ -62,16 +62,10 @@
 
 ### Document Navigator
 
-<table>
-    <tr>
-        <td><a href="business_problem.md#the-business-problem">The Business Problem</a></td>
-        <td>Exploratory Data Analysis (EDA)</td>
-        <td>Analysis</td>
-    </tr>
-    <tr>
-        <td><a href="data.md#data--methodology">Data & Methodology</a></td>
-        <td>Modelling & Evaluation</td>
-        <td>Findings & Conclusions</td>
-    </tr>
+|                                                              |                                 |                        |
+| ------------------------------------------------------------ | ------------------------------- | ---------------------- |
+| <a href="business_problem.md#the-business-problem">The Business Problem</a> | Exploratory Data Analysis (EDA) | Analysis               |
+| <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation          | Findings & Conclusions |
+
 
 [Back to Beginning](https://github.com/cdenbowjr/ga_capstone#predicting-electric-vehicle-charge-points-locations-in-britain)
