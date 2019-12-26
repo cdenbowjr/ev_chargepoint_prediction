@@ -8,9 +8,8 @@
 - [What makes it difficult to "switch"?](#what-makes-it-difficult-to-switch)
 - [What is one solution?](#what-is-one-solution)
 - [How can we make this solution effective?](#how-can-we-make-this-solution-effective)
-+ [Who are the Stakeholders?](#who-are-the-stakeholders)
-+ [Document Navigator](#document-navigator)
-
+- [Who are the Stakeholders?](#who-are-the-stakeholders)
+- [Document Navigator](#document-navigator)
 ------
 
 <img src="/reports/figures/decarbonisation_challenging.jpg" alt = "decarbonise_transport" width=100%/>
