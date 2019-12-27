@@ -12,7 +12,7 @@
 
 ## EV charge point categorisation
 
-<img src="/reports/figures/EV_charging_stations_breakdown.jpg" width=100% />
+<img src="/reports/figures/EV_charging_stations_breakdown.jpg" width=75% />
 
 *Overview*
 
@@ -20,7 +20,7 @@
 - **78.4% of EV charging stations** were located in **establishments**
 - The remaining **20.6% of EV charging stations** were located in **street parking** and on **residential premises**
 
-<img src="/reports/figures/EV_charging_stations_est.jpg" width=100%/>
+<img src="/reports/figures/EV_charging_stations_est.jpg" width=50%/><img src="/reports/figures/EV_charge_points_est.jpg" width=50%/>
 
 *For charging stations associated with establishments:*
 
@@ -31,9 +31,9 @@
 - **11.2%** were linked to a **car dealership, car repair shop or a car wash**
 - **9.2%** were linked to a **supermarket, grocery or pharmacy**
 
-<img src="/reports/figures/EV_charge_points_est.jpg" width=100%/>
 
-*Average number of EV charge points per charging station*
+
+Average number of EV charge points per charging station*
 
 - **4 charge points** on average associated with **parking, public transport and supermarkets**
 - **2 charge points** on average associated with **religious and government entities, car dealerships and hotel lodgings**
