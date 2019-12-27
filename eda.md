@@ -4,6 +4,10 @@
 
 <img src = "/reports/figures/EV_charging_station_dist.jpg" alt = "ev_distribution_england" width=75%/>
 
+------
+
+
+
 ## Definitions
 
 **EV charge point/charging unit** – a single upstand or wall-mounted structure offering one or more socket outlets or tethered plugs suitable for charging EVs.
@@ -29,11 +33,11 @@ The EDA approach will be to investigate the following:
 
 ## Initial Results & Descriptive Analysis
 
-#### What type of places will I find an EV charging stations in England? How many charge points will there be?
+#### What type of places will I find EV charging stations in England? How many charge points will there be?
 
-<font color='blue' font size=4pt>*Overall EV charge points and subsequent charging stations are predominately located in retail, restaurant and hotel lodging establishments. There close to 20,000 registered EV charge points in England*</font>
+`Overall EV charge points and subsequent charging stations are predominately located in retail, restaurant and hotel lodging establishments. There close to 20,000 registered EV charge points in England based on the data`
 
-<img src="/reports/figures/EV_charging_stations_breakdown.jpg" width=75% />
+<img src="/reports/figures/EV_charging_stations_breakdown.jpg" width=50% />
 
 *Overview*
 
@@ -65,10 +69,10 @@ Average number of EV charge points per charging station*
 ## EV charge point distribution per MSOA
 
 - There are **6,791 MSOAs** distributed across England
-- **3,012** of these areas have at least 1 charger (representing **44.4%**)
-- The remaining **3,779** areas have no electric vehicle charger (representing **55.6%**)<br>
+- **3,012** of these areas have at least 1 EV charge point (representing **44.4%**)
+- The remaining **3,779** areas have no EV charge point (representing **55.6%**)<br>
 
-
+<iframe src="http://www.google.com"></iframe>
 
 |                                                              |                                                          |                        |
 | ------------------------------------------------------------ | -------------------------------------------------------- | ---------------------- |
