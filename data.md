@@ -1,5 +1,7 @@
 # Data & Methodology
 
+###### Predicting Electric Vehicle Charge points locations in Britain
+
 ## Table of Contents
 
 
@@ -32,13 +34,7 @@
 
 
 
-### Definitions
-
-
-
-### Requirements
-
-### Collection
+### Data Dictionary
 
 
 
@@ -48,17 +44,10 @@
 
 ## Document Navigator
 
-<table>
-    <tr>
-        <td><a href="business_problem.md#the-business-problem">The Business Problem</a></td>
-        <td>Exploratory Data Analysis (EDA)</td>
-        <td>Analysis</td>
-    </tr>
-    <tr>
-        <td><a href="data.md#data--methodology">Data & Methodology</a></td>
-        <td>Modelling & Evaluation</td>
-        <td>Findings & Conclusions</td>
-    </tr>
+|                                                              |                                                          |                        |
+| ------------------------------------------------------------ | -------------------------------------------------------- | ---------------------- |
+| <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda.md#eda">Exploratory Data Analysis (EDA)</a> | Analysis               |
+| <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                   | Findings & Conclusions |
 
-[Back to Beginning](https://github.com/cdenbowjr/ga_capstone#predicting-electric-vehicle-charge-points-locations-in-britain)
+[Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)
 

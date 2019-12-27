@@ -1,5 +1,7 @@
 # The Business Problem
 
+###### Predicting Electric Vehicle Charge points locations in Britain
+
 <img src="https://i.dailymail.co.uk/1s/2019/04/11/22/12168102-0-image-a-24_1555019233839.jpg"/>
 
 ## Table of Contents
@@ -61,10 +63,9 @@
 
 ### Document Navigator
 
-|                                                              |                                 |                        |
-| ------------------------------------------------------------ | ------------------------------- | ---------------------- |
-| <a href="business_problem.md#the-business-problem">The Business Problem</a> | Exploratory Data Analysis (EDA) | Analysis               |
-| <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation          | Findings & Conclusions |
+|                                                              |                                                          |                        |
+| ------------------------------------------------------------ | -------------------------------------------------------- | ---------------------- |
+| <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda.md#eda">Exploratory Data Analysis (EDA)</a> | Analysis               |
+| <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                   | Findings & Conclusions |
 
-
-[Back to Beginning](https://github.com/cdenbowjr/ga_capstone#predicting-electric-vehicle-charge-points-locations-in-britain)
+[Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)
