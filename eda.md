@@ -2,7 +2,7 @@
 
 ###### Predicting Electric Vehicle Charge points locations in Britain
 
-![](C:\Users\charl\OneDrive\Documents\Education\GeneralAssembly\Personal Portfolio\ev_chargepoint_prediction\reports\figures\EV_charging_station_dist.jpg)
+<img src = "/reports/figures/EV_charging_station_dist.jpg" alt = "ev_distribution_england" width=100%/>)
 
 ## Definitions
 
@@ -12,7 +12,7 @@
 
 ## EV charge point categorisation
 
-<img src="C:\Users\charl\OneDrive\Documents\Education\GeneralAssembly\Personal Portfolio\ev_chargepoint_prediction\reports\figures\EV_charging_stations_breakdown.jpg"  />
+<img src="\reports\figures\EV_charging_stations_breakdown.jpg" width=100% />
 
 *Overview*
 
@@ -20,7 +20,7 @@
 - **78.4% of EV charging stations** were located in **establishments**
 - The remaining **20.6% of EV charging stations** were located in **street parking** and on **residential premises**
 
-![](C:\Users\charl\OneDrive\Documents\Education\GeneralAssembly\Personal Portfolio\ev_chargepoint_prediction\reports\figures\EV_charging_stations_est.jpg)
+<img src="\reports\figures\EV_charging_stations_est.jpg" width=100%/>
 
 *For charging stations associated with establishments:*
 
@@ -31,7 +31,7 @@
 - **11.2%** were linked to a **car dealership, car repair shop or a car wash**
 - **9.2%** were linked to a **supermarket, grocery or pharmacy**
 
-![](C:\Users\charl\OneDrive\Documents\Education\GeneralAssembly\Personal Portfolio\ev_chargepoint_prediction\reports\figures\EV_charge_points_est.jpg)
+<img src="\reports\figures\EV_charge_points_est.jpg" width=100%/>
 
 *Average number of EV charge points per charging station*
 
