@@ -47,7 +47,7 @@ The EDA approach will be to investigate the following:
 
 #### What kind of establishment are the EV charge stations located in?
 
-`EV charging stations are located mainly in retail, restaurant and hotel lodging establishments. These three establishment categories have close to an average of 4 charge points for every charging station`
+`EV charging stations are located mainly in retail, restaurant and hotel lodging establishments. Car parks, public transportation and hotels have close to an average of 4 charge points for every charging station`
 
 <img src="/reports/figures/EV_charging_stations_est.jpg" width=50%/><img src="/reports/figures/EV_charge_points_est.jpg" width=50%/><br> *Figure 2 - Breakdown of EV charging stations in establishments (left); EV charge points per charging station (right)*
 
@@ -83,15 +83,17 @@ The EDA approach will be to investigate the following:
 
 `Just over 50% of areas in the country have no EV charge point`
 
-Summary
+Table 3 - 
 
-> - There are **6,791 MSOAs** distributed across England
-> - **3,781** areas have no EV charge point (representing **55.7%**)
-> - **1,936** of these areas have at least 1 - 5 EV charge points (representing **28.5%**)
-> - **648** of these areas have at least 6 - 10 EV charge points (representing **9.5%**)
-> - **199** of these areas have at least 11 - 15 EV charge points (representing **2.9%**)
-> - **93** of these areas have at least 16 - 20 EV charge points (representing **1.4%**)
-> - **134** of these areas have at least 20+ EV charge points (representing **2.0%**)
+| Number of charge points | Number of MSOAs | % of MSOAs |
+| :---------------------: | :-------------: | :--------: |
+|            0            |      3781       |    55.7    |
+|           1-5           |      1936       |    28.5    |
+|          6-10           |       648       |    9.5     |
+|          11-15          |       199       |    2.9     |
+|          16-20          |       93        |    1.4     |
+|           20+           |       134       |    2.0     |
+|          Total          |      6791       |    100     |
 
 
 
