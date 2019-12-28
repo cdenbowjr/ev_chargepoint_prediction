@@ -103,7 +103,7 @@ The EDA approach will be to investigate the following:
 
 
 
-[Click here for 1.0-ced-chargepoint-analysis.ipynb showing coding](/notebooks/1.0-ced-chargepoint-analysis)
+[Click here for 1.0-ced-chargepoint-analysis.ipynb showing coding](/notebooks/1.0-ced-chargepoint-analysis.ipynb)
 
 |                                                              |                                                          |                        |
 | ------------------------------------------------------------ | -------------------------------------------------------- | ---------------------- |
