@@ -33,7 +33,7 @@ The EDA approach will be to investigate the following:
 
 #### What category of place will I find EV charging stations in England according to Google? How many charge points will there be?
 
-`Majority of EV charging stations are located in establishments. About 1 in 4 are located in street parking or a residential premise. There are close to 20,000 registered EV charge points in England based on the data`
+`Majority of EV charging stations are located in establishments. About 1 in 5 are located in street parking or a residential premise. There are close to 20,000 registered EV charge points in England based on the data`
 
 <img src="/reports/figures/EV_charging_stations_breakdown.jpg" width=50% /><br>*Figure 1 - EV charging stations by Google Maps API categorisation*
 
@@ -83,7 +83,7 @@ The EDA approach will be to investigate the following:
 
 `Just over 50% of areas in the country have no EV charge point`
 
-Table 3 - 
+*Table 3 - Charge point frequency table*
 
 | Number of charge points | Number of MSOAs | % of MSOAs |
 | :---------------------: | :-------------: | :--------: |
@@ -97,9 +97,13 @@ Table 3 -
 
 
 
-The  histogram in Figure of the EV charge points gives a more granular representation of the figures above
+<img src="/reports/figures/charge_point_hist.jpg" width=75%/> <br>*Figure 3 - Numerical EV Charge point distribution for England*
 
-<img src="/reports/figures/charge_point_hist.jpg" width=75%/>
+<img src = "/reports/figures/EV_charging_station_dist.jpg" alt = "ev_distribution_england" width=50%/> <br>*Figure 4 - Spatial EV charge point distribution for England*
+
+
+
+[Click here for 1.0-ced-chargepoint-analysis.ipynb showing coding](/notebooks/1.0-ced-chargepoint-analysis)
 
 |                                                              |                                                          |                        |
 | ------------------------------------------------------------ | -------------------------------------------------------- | ---------------------- |
