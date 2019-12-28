@@ -51,22 +51,31 @@ The EDA approach will be to investigate the following:
 
 <img src="/reports/figures/EV_charging_stations_est.jpg" width=50%/><img src="/reports/figures/EV_charge_points_est.jpg" width=50%/><br> *Figure 2 - Breakdown of EV charging stations in establishments (left); EV charge points per charging station (right)*
 
-<u>For charging stations associated with establishments:</u>
-
-> - **27%** were linked to **retail/store** activity
-> - **24.5%** were linked to a **restaurant, bar or cafe**
-> - **19%** were linked to **lodgings or hotels**
-> - **13.8%** were linked to **public and private parking**
-> - **11.2%** were linked to a **car dealership, car repair shop or a car wash**
-> - **9.2%** were linked to a **supermarket, grocery or pharmacy**
 
 
+*Table 1 - Top 6 establishment categories for charging stations*
 
-<u>Average number of EV charge points per charging station</u>
+| Establishment category             | % of charging stations | Average number of charge points |
+| ---------------------------------- | ---------------------- | ------------------------------- |
+| Retail/Stores                      | 27                     | 3.2                             |
+| Restaurants, Bars & Cafes          | 24.5                   | 3.1                             |
+| Lodgings and Hotels                | 19                     | 2.3                             |
+| Public/Private Parking             | 13.8                   | 3.8                             |
+| Car Dealership, Repair or Car Wash | 11.2                   | 2.4                             |
+| Supermarket, grocery or pharmacy   | 9.2                    | 3.7                             |
 
-> - **4 charge points** on average associated with **parking, public transport and supermarkets** 
-> - **2 charge points** on average associated with **religious and government entities, car dealerships and hotel lodgings**
-> - Every other location had about 3 charge points per charging station
+
+
+*Table 2 - Top 6 establishment categories for highest average number of charge points per charging station*
+
+| Establishment category           | Average number of charge points |
+| -------------------------------- | ------------------------------- |
+| Public/Private Parking           | 3.8                             |
+| Public Transportation            | 3.8                             |
+| Supermarket, grocery or pharmacy | 3.7                             |
+| Gas Stations                     | 3.4                             |
+| Banks                            | 3.3                             |
+| Retail/Stores                    | 3.2                             |
 
 ------
 
@@ -74,14 +83,15 @@ The EDA approach will be to investigate the following:
 
 `Just over 50% of areas in the country have no EV charge point`
 
-There are **6,791 MSOAs** distributed across England
+Summary
 
-- **3,781** areas have no EV charge point (representing **55.7%**)
-- **1,936** of these areas have at least 1 - 5 EV charge points (representing **28.5%**)
-- **648** of these areas have at least 6 - 10 EV charge points (representing **9.5%**)
-- **199** of these areas have at least 11 - 15 EV charge points (representing **2.9%**)
-- **93** of these areas have at least 16 - 20 EV charge points (representing **1.4%**)
-- **134** of these areas have at least 20+ EV charge points (representing **2.0%**)
+> - There are **6,791 MSOAs** distributed across England
+> - **3,781** areas have no EV charge point (representing **55.7%**)
+> - **1,936** of these areas have at least 1 - 5 EV charge points (representing **28.5%**)
+> - **648** of these areas have at least 6 - 10 EV charge points (representing **9.5%**)
+> - **199** of these areas have at least 11 - 15 EV charge points (representing **2.9%**)
+> - **93** of these areas have at least 16 - 20 EV charge points (representing **1.4%**)
+> - **134** of these areas have at least 20+ EV charge points (representing **2.0%**)
 
 
 
