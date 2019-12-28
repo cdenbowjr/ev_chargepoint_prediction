@@ -31,21 +31,27 @@ The EDA approach will be to investigate the following:
 
 ## Descriptive Analysis
 
-#### What type of places will I find EV charging stations in England? How many charge points will there be?
+#### What category of place will I find EV charging stations in England according to Google? How many charge points will there be?
 
-`Overall EV charge points and subsequent charging stations are predominately located in retail, restaurant and hotel lodging establishments. There are close to 20,000 registered EV charge points in England based on the data`
+`Majority of EV charging stations are located in establishments. About 1 in 4 are located in street parking or a residential premise. There are close to 20,000 registered EV charge points in England based on the data`
 
-<img src="/reports/figures/EV_charging_stations_breakdown.jpg" width=50% />
+<img src="/reports/figures/EV_charging_stations_breakdown.jpg" width=50% /><br>*Figure 1 - EV charging stations by Google Maps API categorisation*
 
-*Overview*
+<u>Summary</u>
 
 > - **6,216 EV charging stations** are distributed across England (equivalent to **19,582 EV charge points**)
 > - **78.4% of EV charging stations** are located in **establishments**
-> - The remaining **20.6% of EV charging stations** are located in **street parking** and on **residential premises**
+> - The remaining **20.6% of EV charging stations** are located in **street parking** and on **residential premises**<br>
 
-<img src="/reports/figures/EV_charging_stations_est.jpg" width=50%/><img src="/reports/figures/EV_charge_points_est.jpg" width=50%/>
+------
 
-*For charging stations associated with establishments:*
+#### What kind of establishment are the EV charge stations located in?
+
+`EV charging stations are located mainly in retail, restaurant and hotel lodging establishments. These three establishment categories have close to an average of 4 charge points for every charging station`
+
+<img src="/reports/figures/EV_charging_stations_est.jpg" width=50%/><img src="/reports/figures/EV_charge_points_est.jpg" width=50%/><br> *Figure 2 - Breakdown of EV charging stations in establishments (left); EV charge points per charging station (right)*
+
+<u>For charging stations associated with establishments:</u>
 
 > - **27%** were linked to **retail/store** activity
 > - **24.5%** were linked to a **restaurant, bar or cafe**
@@ -56,17 +62,17 @@ The EDA approach will be to investigate the following:
 
 
 
-Average number of EV charge points per charging station
+<u>Average number of EV charge points per charging station</u>
 
 > - **4 charge points** on average associated with **parking, public transport and supermarkets** 
 > - **2 charge points** on average associated with **religious and government entities, car dealerships and hotel lodgings**
 > - Every other location had about 3 charge points per charging station
 
-
-
-## EV charge point distribution per MSOA
+------
 
 #### How are charge points distributed across England?
+
+`Just over 50% of areas in the country have no EV charge point`
 
 There are **6,791 MSOAs** distributed across England
 
@@ -76,6 +82,10 @@ There are **6,791 MSOAs** distributed across England
 - **199** of these areas have at least 11 - 15 EV charge points (representing **2.9%**)
 - **93** of these areas have at least 16 - 20 EV charge points (representing **1.4%**)
 - **134** of these areas have at least 20+ EV charge points (representing **2.0%**)
+
+
+
+The  histogram in Figure of the EV charge points gives a more granular representation of the figures above
 
 <img src="/reports/figures/charge_point_hist.jpg" width=75%/>
 
