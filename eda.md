@@ -39,28 +39,28 @@ The EDA approach will be to investigate the following:
 
 *Overview*
 
-- **6,216 EV charging stations** are distributed across England (equivalent to **19,582 EV charge points**)
-- **78.4% of EV charging stations** are located in **establishments**
-- The remaining **20.6% of EV charging stations** are located in **street parking** and on **residential premises**
+> - **6,216 EV charging stations** are distributed across England (equivalent to **19,582 EV charge points**)
+> - **78.4% of EV charging stations** are located in **establishments**
+> - The remaining **20.6% of EV charging stations** are located in **street parking** and on **residential premises**
 
 <img src="/reports/figures/EV_charging_stations_est.jpg" width=50%/><img src="/reports/figures/EV_charge_points_est.jpg" width=50%/>
 
 *For charging stations associated with establishments:*
 
-- **27%** were linked to **retail/store** activity
-- **24.5%** were linked to a **restaurant, bar or cafe**
-- **19%** were linked to **lodgings or hotels**
-- **13.8%** were linked to **public and private parking**
-- **11.2%** were linked to a **car dealership, car repair shop or a car wash**
-- **9.2%** were linked to a **supermarket, grocery or pharmacy**
+> - **27%** were linked to **retail/store** activity
+> - **24.5%** were linked to a **restaurant, bar or cafe**
+> - **19%** were linked to **lodgings or hotels**
+> - **13.8%** were linked to **public and private parking**
+> - **11.2%** were linked to a **car dealership, car repair shop or a car wash**
+> - **9.2%** were linked to a **supermarket, grocery or pharmacy**
 
 
 
-Average number of EV charge points per charging station*
+Average number of EV charge points per charging station
 
-- **4 charge points** on average associated with **parking, public transport and supermarkets**
-- **2 charge points** on average associated with **religious and government entities, car dealerships and hotel lodgings**
-- Every other location had about 3 charge points per charging station
+> - **4 charge points** on average associated with **parking, public transport and supermarkets** 
+> - **2 charge points** on average associated with **religious and government entities, car dealerships and hotel lodgings**
+> - Every other location had about 3 charge points per charging station
 
 
 
