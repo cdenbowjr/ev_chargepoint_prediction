@@ -38,7 +38,7 @@
 
 ### Data Dictionary
 
-
+[data dictionary table](data_dictionary.md)
 
 ## Methodology
 

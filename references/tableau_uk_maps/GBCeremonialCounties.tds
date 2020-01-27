@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<datasource formatted-name='firebird.42124.622515069444' inline='true' source-platform='win' version='9.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<!-- build 9000.15.0318.1720                                -->
+ <connection class='firebird' dbname='GEOCODING.FDB' local-data='{1511920A-B54C-4E9A-974E-156A129A2167}' password='' username='sysdba'>
+    <relation join='inner' type='join'>
+      <clause type='join'>
+        <expression op='='>
+          <expression op='[GBCeremonialCounties].[ID]'>
+          </expression>
+          <expression op='[LDGBCeremonialCounties].[ParentID]'>
+          </expression>
+        </expression>
+      </clause>
+      <relation name='GBCeremonialCounties' table='[GBCeremonialCounties]' type='table' />
+      <relation name='LDGBCeremonialCounties' table='[LDGBCeremonialCounties]' type='table' />
+    </relation>
+    <cols>
+      <map key='[Geometry (generated)]' value='[LDGBCeremonialCounties].[Geometry]' />
+      <map key='[ID]' value='[GBCeremonialCounties].[ID]' />
+      <map key='[Latitude (generated)]' value='[LDGBCeremonialCounties].[Latitude]' />
+      <map key='[Longitude (generated)]' value='[LDGBCeremonialCounties].[Longitude]' />
+      <map key='[MapCode (LDGBCeremonialCounties)]' value='[LDGBCeremonialCounties].[MapCode]' />
+      <map key='[MapCode]' value='[GBCeremonialCounties].[MapCode]' />
+      <map key='[GB Counties]' value='[GBCeremonialCounties].[Name]' />
+      <map key='[ParentID]' value='[LDGBCeremonialCounties].[ParentID]' />
+    </cols>
+  </connection>
+  <aliases enabled='yes' />
+  <column caption='Geometry (generated)' datatype='string' name='[Geometry (generated)]' role='dimension' semantic-role='[Geographical].[Geometry]' type='nominal'>
+  </column>
+  <column datatype='integer' hidden='true' name='[ID]' role='dimension' type='ordinal'>
+  </column>
+  <column aggregation='Avg' caption='Latitude (generated)' datatype='real' name='[Latitude (generated)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+  <server-captions>
+      <caption locale='en_US'>Latitude (generated)</caption>
+    </server-captions>
+  </column>
+  <column aggregation='Avg' caption='Longitude (generated)' datatype='real' name='[Longitude (generated)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+  <server-captions>
+      <caption locale='en_US'>Longitude (generated)</caption>
+    </server-captions>
+  </column>
+  <column datatype='integer' hidden='true' name='[MapCode (LDGBCeremonialCounties)]' role='dimension' type='ordinal'>
+  </column>
+  <column caption='Map Code' datatype='integer' hidden='true' name='[MapCode]' role='dimension' type='ordinal'>
+  </column>
+  <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+    <calculation class='tableau' formula='1' />
+  </column>
+  <column caption='GB Counties' datatype='string' name='[GB Counties]' role='dimension' type='nominal'>
+</column>
+  <column caption='Parent ID' datatype='integer' hidden='true' name='[ParentID]' role='dimension' type='ordinal'>
+  </column>
+  <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+</datasource>

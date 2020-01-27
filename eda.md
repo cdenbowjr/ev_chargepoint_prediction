@@ -105,6 +105,14 @@ The EDA approach will be to investigate the following:
 
 [Click here for 1.0-ced-chargepoint-analysis.ipynb showing coding](/notebooks/1.0-ced-chargepoint-analysis.ipynb)
 
+
+$$
+\hat{a}
+\mathring{a}
+\pm
+$$
+
+
 |                                                              |                                                          |                        |
 | ------------------------------------------------------------ | -------------------------------------------------------- | ---------------------- |
 | <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda.md#eda">Exploratory Data Analysis (EDA)</a> | Analysis               |
