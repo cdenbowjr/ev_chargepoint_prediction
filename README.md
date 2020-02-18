@@ -30,10 +30,10 @@ Preliminary results showed that the probability of an EV charge point being loca
 
 ### Document Navigator
 
-|                                                              |                                                          |                        |
-| ------------------------------------------------------------ | -------------------------------------------------------- | ---------------------- |
-| <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda.md#eda">Exploratory Data Analysis (EDA)</a> | Analysis               |
-| <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                   | Findings & Conclusions |
+|                                                              |                                                              |                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------- |
+| <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda1.md#eda">Exploratory Data Analysis (EDA) - Target Variable</a><br><a href="eda2.md#eda">Exploratory Data Analysis (EDA) - Feature Variables</a> | Analysis               |
+| <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                       | Findings & Conclusions |
 
 
 
