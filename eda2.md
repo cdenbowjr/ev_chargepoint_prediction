@@ -19,20 +19,13 @@
 | LSOA          | 1,000                  | 3,000                  | 400                              | 1,200                            |
 | MSOA          | 5,000                  | 15,000                 | 2,000                            | 6,000                            |
 
-
+---------
 
 ### Distributions
 
-It was found that most variables (features and target included) had skewed distributions.
+It was found that most variables (features and target included) had skewed distributions. The distribution of feature variables are mostly positively skewed with only 4.1% being normally distributed; Significant outliers in the variables exist
 
-**Do the features in the dataset have considerable variance, are they normally distributed?**
 
-1. Only 4.1% of feature variables (11) approached a normal distribution based on a skew criterion of within $\pm 0.5$ and a kurtosis criterion of $\pm3$.
-2. The remaining 95.9% had positively skewed distributions
-3. 12.5% of feature variables (34) were positively skewed with reasonable kurtosis
-4. The `cycle_from_work_nhb` feature had a distribution most similar to the number of EV chargepoints
-5. Most variables therefore had substantial amount of outliers
->*The distribution of feature variables are mostly positively skewed with only 4.1% being normally distributed; Significant outliers in the variables exist*
 
 The variables that had *normal distributions* in the data across all MSOAs were:
 
@@ -66,10 +59,55 @@ ________________________________
 <table>
     <tr>
         <td>
-            <img src="../reports/figures/eda_graphs/cardriver_from_friends_hist_bar.jpg" style= "height:150px">
+            <img src="/reports/figures/eda_graphs/cardriver_from_friends_hist_bar.jpg" style= "height:150px">
         </td>
         <td>
-            <img src="../reports/figures/eda_graphs/crime_score_hist_bar.jpg" style= "height:150px">
+            <img src="/reports/figures/eda_graphs/crime_score_hist_bar.jpg" style= "height:150px">
+        </td>
+    </tr>
+</table>
+
+------
+
+### Transformations
+In order to address some of the outliers the data was transformed. This included logarithmic and power transformations (Box-Cox or Yeo-Johnson) to aggregation with final standardisation.
+
+
+
+***Socio-Economic***<br>
+
+<table>
+    <tr>
+        <td>
+            <img src="/reports/figures/eda_graphs/socio_econ1_transform.jpg" style= "width:80%" align='left'>
+         </td>
+    </tr>
+</table>
+
+***Population & Income***<br>
+<table>
+    <tr>
+        <td>
+            <img src="/reports/figures/eda_graphs/pop_income_transform.jpg" style= "width:80%" align='left'>
+        </td>
+    </tr>
+</table>
+
+***Transportation***<br>
+
+<table>
+    <tr>
+        <td>
+            <img src="/reports/figures/eda_graphs/transport_transform.jpg" style= "width:80%" align='left'>
+        </td>
+    </tr>
+</table>
+
+***Electricity***<br>
+<table>
+    <tr>
+        <td>
+            <img src="/reports/figures/eda_graphs/electricity_transform.jpg" style= "width:80%" align='left'>
         </td>
     </tr>
 </table>
