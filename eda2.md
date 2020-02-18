@@ -2,7 +2,7 @@
 
 ###### Predicting Electric Vehicle Charge points locations in Britain
 
-<img src = "/reports/figures/EV_charging_station_dist.jpg" alt = "ev_distribution_england" width=75%/>
+<img src = "/reports/figures/correlations/socio_econ_correlation.jpg" alt = "ev_distribution_england" width=75%/>
 
 ------
 

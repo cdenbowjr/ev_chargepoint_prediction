@@ -55,9 +55,9 @@
 | Stakeholder                                     | Examples                                     | Reason                                                       |
 | ----------------------------------------------- | -------------------------------------------- | :----------------------------------------------------------- |
 | Policy Makers, Thinktanks & Local Councils      | HM Government, Milton Keynes local Authority | Useful for any marketing campaign or incentive scheme that involves the public to ensure it will be cost-effective and focused |
-| EV charge point installers or service providers | Sourcepoint London, ubitricity               | Useful for any enterprise or business be proactive about any bids or investment for the installation of charging stations |
+| EV charge point installers or service providers | Sourcepoint London, ubitricity               | Useful for any enterprise or business to be proactive about any bids or investment for the installation of charging stations |
 | EV Manufacturers                                | Tesla, Nissan, Audi                          | Useful for manufacturers to understand areas that are likely to purchase an EV for their primary or secondary mode of transportation |
-| Electricity Distributers and Suppliers          | EDF Energy                                   | Useful for distributers and suppliers of electricity as it will identify the areas of the electricity grid that need investment for future demand from EV transport |
+| Electricity Distributers and Suppliers          | EDF Energy                                   | Useful for distributers and suppliers of electricity as it will identify the areas of the electricity grid that need investment for future demand from EV transportation |
 
 
 
