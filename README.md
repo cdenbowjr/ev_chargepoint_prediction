@@ -6,11 +6,11 @@
 
 ## Summary
 
-**This project entailed the building of a machine learning classification model for predicting EV charge point locations based on socio-economic, transportation and geo-spatial characteristics acquired from public and government data.**
+**This project entailed building a machine learning classification model for predicting EV charge point locations based on socio-economic, transportation and geo-spatial characteristics acquired from public and government data.**
 
-It further explored areas of potential for new EV charge point installations using the unsupervised KMeans algorithm to cluster areas with favorable characteristics. 
+It further explored areas of potential for new EV charge point installations using the unsupervised KMeans algorithm to cluster areas with favorable characteristics from the classification model. 
 
-Raw data was preprocessed in order to ultimately train and test a Logistic Regression classifier and statistical testing of feature coefficients were done to confirm the factors that increased and decreased the likelihood of EV charge point installation. 
+Raw data was preprocessed in order to ultimately train and test a Logistic Regression classifier and statistical testing of feature coefficients were done to confirm the factors that increased or decreased the likelihood of EV charge point installation. 
 
 ------
 
@@ -18,13 +18,13 @@ Preliminary results showed that the probability of an EV charge point being loca
 
 <u>Increases</u>
 
-1. As the number of journeys people took to conduct employers business by car increases
-2. As the number of EV car registrations increased in 2018
+1. As the average weekday number of journeys done by driving to/from employers business increases
 
 <u>Decreases</u>
 
 1. As the quality of housing in that area decreases
-2. As the deprivation of adult skills set increases
+2. quality of the local environment based on quality of housing  (indoors)
+3. As the deprivation of adult skills set increases
 
 
 

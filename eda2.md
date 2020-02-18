@@ -111,3 +111,5 @@ In order to address some of the outliers the data was transformed. This included
         </td>
     </tr>
 </table>
+
+The majority of the indicators in the Indices of Deprivation are measured as proportions or rates of the population that are deprived, and therefore use denominators based on population

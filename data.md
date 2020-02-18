@@ -14,7 +14,8 @@
 
 #### Socio-Economic
 
-- [English Indices of Deprivation for 2019](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/845345/File_7_-_All_IoD2019_Scores__Ranks__Deciles_and_Population_Denominators_3.csv/preview) 
+- [English Indices of Deprivation for 2019](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/845345/File_7_-_All_IoD2019_Scores__Ranks__Deciles_and_Population_Denominators_3.csv/preview)
+- [English Indices of Deprivation 2019: technical report](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/833951/IoD2019_Technical_Report.pdf )
 - [Small area income estimates for middle layer super output areas, England and Wales](https://www.ons.gov.uk/file?uri=%2femploymentandlabourmarket%2fpeopleinwork%2fearningsandworkinghours%2fdatasets%2fsmallareaincomeestimatesformiddlelayersuperoutputareasenglandandwales%2ffinancialyearending2016/1smallareaincomeestimatesdata.xls)
 
 #### Transportation/Trip Ends
