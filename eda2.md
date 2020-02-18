@@ -49,10 +49,10 @@ The variables that had *normal distributions* in the data across all MSOAs were:
 <table>
     <tr>
         <td>
-            <img src="../reports/figures/eda_graphs/indoor_score_hist_bar.jpg" style= "height:150px">
+            <img src="/reports/figures/eda_graphs/indoor_score_hist_bar.jpg" style= "height:150px">
         </td>
         <td>
-            <img src="../reports/figures/eda_graphs/crime_score_hist_bar.jpg" style= "height:150px">
+            <img src="/reports/figures/eda_graphs/crime_score_hist_bar.jpg" style= "height:150px">
         </td>
     </tr>
 </table>
