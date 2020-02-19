@@ -116,6 +116,8 @@ The majority of the indicators in the Indices of Deprivation are measured as pro
 
 
 
+[Click here for the EDA 2 notebook code](/notebooks/2.0-ced-exploratory-data-analysis.ipynb)
+
 |                                                              |                                                              |                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------- |
 | <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda1.md#eda">Exploratory Data Analysis (EDA) - Target Variable</a><br/><a href="eda2.md#eda">Exploratory Data Analysis (EDA) - Feature Variables</a> | Analysis               |
