@@ -21,7 +21,7 @@
 
 ### Distributions
 
-It was found that most variables (features and target included) had skewed distributions. The distribution of feature variables are mostly positively skewed with only 4.1% being normally distributed; Significant outliers in the variables exist
+> ***It was found that most variables (features and target included) had skewed distributions.***The distribution of feature variables are mostly positively skewed with only 4.1% being normally distributed; Significant outliers in the variables exist
 
 
 
@@ -74,7 +74,7 @@ ________________________________
 ------
 
 ### Transformations
-In order to address some of the outliers the data was transformed. This included logarithmic and power transformations (Box-Cox or Yeo-Johnson) to aggregation with final standardisation.
+> ***In order to address some of the outliers the data was transformed.*** This included logarithmic and power transformations (Box-Cox or Yeo-Johnson) to aggregation with final standardisation.
 
 
 
@@ -119,6 +119,10 @@ In order to address some of the outliers the data was transformed. This included
 
 
 ### Correlations
+
+> ***EV charge points presence is somewhat correlated with non-domestic electricity consumption, weekday journeys to work, employers business or social events***
+
+
 
 Large numbers of EV charge points in an area may occur where there is higher weekday number of journeys:
 
@@ -165,7 +169,7 @@ Large numbers of EV charge points in an area may occur where there is:
 
 ![Title](./reports/figures/correlations/electricity_correlation.jpg)
 
-
+#### Collinearity
 
 
 
