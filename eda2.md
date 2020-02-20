@@ -28,14 +28,17 @@ It was found that most variables (features and target included) had skewed distr
 The variables that had *normal distributions* in the data across all MSOAs were:
 
 ***Socio-Economic***<br>
-1) `chanyp_score`  - the lack of attainment and skills in the local population relating to children and young people<br>
-2) `adultskills_score` - the lack of attainment and skills in the local population relating to adult skills<br>
-3) `widerbar_score` - the physical and financial accessibility of housing and local services based on access to housing such as affordability (wider barriers)<br>
-4) `geo_bar_score` - the physical and financial accessibility of housing and local services based on physical proximity of local services (geographical barriers)<br>
-5) `indoor_score` - the quality of the local environment based on quality of housing (indoors)<br>
-6) `outdoor_score` - the quality of the local environment based on  air quality and road traffic accidents (outdoors)<br>
-7) `heatlh_score` - the risk of premature death and the impairment of quality of life through poor physical or mental health<br>
-8) `crime_score` - the risk of personal and material victimisation at local level<br>
+
+| **variable**        | **description**                                              |
+| :------------------ | :----------------------------------------------------------- |
+| `chanyp_score`      | the lack of attainment and skills in the local population relating to children and young people |
+| `adultskills_score` | the lack of attainment and skills in the local population relating to adult skills |
+| `widerbar_score`    | barriers to housing and local services based on affordability |
+| `geo_bar_scor`      | barriers to housing and local services based on physical proximity of local services |
+| `indoor_score`      | the quality of the local environment based on quality of housing (indoors) |
+| `outdoor_score`     | the quality of the local environment based on  air quality and road traffic accidents (outdoors) |
+| `heatlh_score`      | the risk of premature death and the impairment of quality of life through poor physical or mental health |
+| `crime_score`       | the risk of personal and material victimisation at local level |
 
 <table>
     <tr>
@@ -50,9 +53,12 @@ The variables that had *normal distributions* in the data across all MSOAs were:
 
 ________________________________
 ***Transport & Car related***<br>
-1) `cardriver_from_friends` - average weekday number of journeys done by driving from visit friends (home-based)<br>
-2) `two_car` - number of people who own 2 cars in the MSOA<br>
-3) `total_cars` - total number of cars in the MSOA<br>
+
+| **variable**             | **description**                                              |
+| :----------------------- | :----------------------------------------------------------- |
+| `cardriver_from_friends` | average weekday number of journeys done by driving from visit friends (home-based) |
+| `two_car`                | number of people who own 2 cars in the MSOA                  |
+| `total_cars`             | total number of cars in the MSOA                             |
 
 <table>
     <tr>
