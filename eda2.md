@@ -154,6 +154,23 @@ Large numbers of EV charge points in an area may occur where there is higher wee
     </tr>
 </table>
 
+
+
+Large numbers of EV charge points in an area may occur where there is:
+
+1. high 2018 non-domestic electricity consumption in the respective area
+2. high number of non-domestic electricity meters in the respective area
+
+
+
+![Title](../reports/figures/correlations/electricity_correlation.jpg)
+
+
+
+
+
+
+
 The majority of the indicators in the Indices of Deprivation are measured as proportions or rates of the population that are deprived, and therefore use denominators based on population
 
 
