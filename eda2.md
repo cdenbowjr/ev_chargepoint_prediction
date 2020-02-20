@@ -2,8 +2,6 @@
 
 ###### Predicting Electric Vehicle Charge points locations in Britain
 
-<img src = "/reports/figures/correlations/socio_econ_correlation.jpg" alt = "ev_distribution_england" width=75%/>
-
 ------
 
 ## Definitions
@@ -79,7 +77,7 @@ In order to address some of the outliers the data was transformed. This included
 <table>
     <tr>
         <td>
-            <img src="/reports/figures/eda_graphs/socio_econ1_transform.jpg" style= "width:80%" align='left'>
+            <img src="/reports/figures/eda_graphs/socio_econ1_transform.jpg" style= "width:75%" align='left'>
          </td>
     </tr>
 </table>
@@ -88,7 +86,7 @@ In order to address some of the outliers the data was transformed. This included
 <table>
     <tr>
         <td>
-            <img src="/reports/figures/eda_graphs/pop_income_transform.jpg" style= "width:80%" align='left'>
+            <img src="/reports/figures/eda_graphs/pop_income_transform.jpg" style= "width:75%" align='left'>
         </td>
     </tr>
 </table>
@@ -98,7 +96,7 @@ In order to address some of the outliers the data was transformed. This included
 <table>
     <tr>
         <td>
-            <img src="/reports/figures/eda_graphs/transport_transform.jpg" style= "width:80%" align='left'>
+            <img src="/reports/figures/eda_graphs/transport_transform.jpg" style= "width:75%" align='left'>
         </td>
     </tr>
 </table>
@@ -107,7 +105,7 @@ In order to address some of the outliers the data was transformed. This included
 <table>
     <tr>
         <td>
-            <img src="/reports/figures/eda_graphs/electricity_transform.jpg" style= "width:80%" align='left'>
+            <img src="/reports/figures/eda_graphs/electricity_transform.jpg" style= "width:75%" align='left'>
         </td>
     </tr>
 </table>
