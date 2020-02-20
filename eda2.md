@@ -116,6 +116,30 @@ In order to address some of the outliers the data was transformed. This included
     </tr>
 </table>
 
+
+
+### Correlations
+
+Large numbers of EV charge points in an area may occur where there is higher weekday number of journeys:
+
+1. to employers business regardless of transportation mode in the respective area
+2. to recreational events regardless of transportation mode in the respective area
+3. to work by walking, cycling, driving or bus in the respective area
+4. by rail to shopping in the respective area
+
+
+
+<table>
+    <tr>
+        <td>
+            <img src="/reports/figures/correlations/transport_correlation_0.jpg" style= "height:150px">
+        </td>
+        <td>
+            <img src="/reports/figures/correlations/transport_correlation_0.jpg" style= "height:150px">
+        </td>
+    </tr>
+</table>
+
 The majority of the indicators in the Indices of Deprivation are measured as proportions or rates of the population that are deprived, and therefore use denominators based on population
 
 
