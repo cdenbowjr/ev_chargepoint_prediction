@@ -163,7 +163,7 @@ Large numbers of EV charge points in an area may occur where there is:
 
 
 
-![Title](../reports/figures/correlations/electricity_correlation.jpg)
+![Title](./reports/figures/correlations/electricity_correlation.jpg)
 
 
 
