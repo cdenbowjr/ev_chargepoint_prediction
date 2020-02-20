@@ -21,7 +21,9 @@
 
 ### Distributions
 
-> ***It was found that most variables (features and target included) had skewed distributions.***The distribution of feature variables are mostly positively skewed with only 4.1% being normally distributed; Significant outliers in the variables exist
+> ***It was found that most variables (features and target included) had skewed distributions.***
+>
+> The distribution of feature variables are mostly positively skewed with only 4.1% being normally distributed; Significant outliers in the variables exist
 
 
 
@@ -183,7 +185,7 @@ The majority of the indicators in the Indices of Deprivation are measured as pro
 
 |                                                              |                                                              |                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------- |
-| <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda1.md#eda">Exploratory Data Analysis (EDA) - Target Variable</a><br/><a href="eda2.md#eda">Exploratory Data Analysis (EDA) - Feature Variables</a> | Analysis               |
+| <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda1.md#eda">EDA - Part 1</a> \| <a href="eda2.md#eda">EDA - Part 2</a> | Analysis               |
 | <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                       | Findings & Conclusions |
 
 [Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)
