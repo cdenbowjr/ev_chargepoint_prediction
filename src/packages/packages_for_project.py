@@ -47,3 +47,19 @@ from tabulate import tabulate
 import time
 import random
 
+#Loading image related packages
+import json
+import folium
+from pandas.io.json import json_normalize
+from shapely.geometry import Point,Polygon,LineString,MultiPolygon
+
+import postcodes_io_api
+api  = postcodes_io_api.Api(debug_http=True)
+
+
+#Function to Load geojson file and convert to dataframe
+def load_geojson(filepath):
+    with open(filepath) as file:
+        data = json.load(file)
+
+    return json_normalize(data=data['features'])
