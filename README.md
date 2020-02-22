@@ -28,6 +28,13 @@ Preliminary results showed that the probability of an EV charge point being loca
 
 
 
+<table>
+    <tr>
+    	<td align='left' width='50%'>Summary</td>
+    	<td align='right' width="50%"><a href="business_problem.md#the-business-problem">The Business Problem >></a></td>
+    </tr>
+</table>
+
 ### Document Navigator
 
 |                                                              |                                                              |                        |
