@@ -2,7 +2,7 @@
 
 ###### Predicting Electric Vehicle Charge points locations in Britain
 
-<img src = "/reports/figures/EV_charging_station_dist.jpg" alt = "ev_distribution_england" width=75%/>
+<img src = "/reports/figures/EV_charging_station_dist.jpg" alt = "ev_distribution_england" width=75%/><br>*Spatial EV charge point distribution for England*
 
 ____
 
@@ -84,9 +84,9 @@ The EDA approach will be to investigate the following:
 
 <img src="/reports/figures/charge_point_hist.jpg" width=75%/> <br>*Figure 3 - Numerical EV Charge point distribution for England*
 
-<img src = "/reports/figures/EV_charging_station_dist.jpg" alt = "ev_distribution_england" width=50%/> <br>*Figure 4 - Spatial EV charge point distribution for England*
+____
 
-
+### The Code
 
 [Click here for 1.0-ced-chargepoint-analysis.ipynb showing coding](/notebooks/1.0-ced-chargepoint-analysis.ipynb)
 
