@@ -109,8 +109,8 @@ The EDA approach will be to investigate the following:
 
 <table align="center">
     <tr>
-    	<td align='left' width="50%"><a href="data.md#data--methodology"><< Data & Methodology</a>	</td>
-    	<td align='right' width="50%"><a href="eda2.md#eda">Exploratory Data Analysis II >></a></td>
+    	<td align='left'><a href="data.md#data--methodology"><< Data & Methodology</a>	</td>
+    	<td align='right'><a href="eda2.md#eda">Exploratory Data Analysis II >></a></td>
     </tr>
 </table>
 
