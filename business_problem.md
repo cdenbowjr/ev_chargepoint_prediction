@@ -31,7 +31,7 @@
 
 |       | Difficulties                                                 |
 | :---: | :----------------------------------------------------------- |
-|   1   | <table>        <tr>    	<td align='left' width="50%"><a href="business_problem.md#the-business-problem"><< The Business Problem</a>	</td>    	<td align='right' width="50%"><a href="eda1.md#eda">Exploratory Data Analysis I >></a></td>    </tr></table> |
+|   1   | The public has limited variety of EV choice for purchase compared to gasoline and diesel vehicles |
 |   2   | Buying a new EV costs more for the average resident than buying or keeping an existing gasoline/diesel vehicle |
 | **3** | **There is a sparse distribution of EV charging infrastructure across Britain resulting in slow adoption of this technology due to "Range Anxiety"** |
 
