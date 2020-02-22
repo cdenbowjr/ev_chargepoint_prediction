@@ -88,7 +88,7 @@ ____
 
 ### The Code
 
-[Click here for 1.0-ced-chargepoint-analysis.ipynb showing coding](/notebooks/1.0-ced-chargepoint-analysis.ipynb)
+[Click here for the Python Code](/notebooks/1.0-ced-chargepoint-analysis.ipynb)
 
 ____
 

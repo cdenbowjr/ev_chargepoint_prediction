@@ -14,6 +14,8 @@ Raw data was preprocessed in order to ultimately train and test a Logistic Regre
 
 ------
 
+## Findings
+
 Preliminary results showed that the probability of an EV charge point being located in an area:
 
 <u>Increases</u>
