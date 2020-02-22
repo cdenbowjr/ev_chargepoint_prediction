@@ -28,7 +28,7 @@ Preliminary results showed that the probability of an EV charge point being loca
 
 
 
-## Definitions
+### Definitions
 
 **EV charge point/charging unit** – a single upstand or wall-mounted structure offering one or more socket outlets or tethered plugs suitable for charging EVs.
 
@@ -41,7 +41,9 @@ Preliminary results showed that the probability of an EV charge point being loca
 | LSOA          | 1,000                  | 3,000                  | 400                              | 1,200                            |
 | MSOA          | 5,000                  | 15,000                 | 2,000                            | 6,000                            |
 
+___
 
+### Navigator
 
 <table>
     <th align='left'>Previous</th>
@@ -51,15 +53,6 @@ Preliminary results showed that the probability of an EV charge point being loca
     	<td align='right' width="50%"><a href="business_problem.md#the-business-problem">The Business Problem >></a></td>
     </tr>
 </table>
-
-______
-
-### Document Navigator
-
-|                                                              |                                                              |                        |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------- |
-| <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda1.md#eda">EDA - Part 1</a> \| <a href="eda2.md#eda">EDA - Part 2</a> | Analysis               |
-| <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                       | Findings & Conclusions |
 
 ____
 
