@@ -2,15 +2,11 @@
 
 ###### Predicting Electric Vehicle Charge points locations in Britain
 
-## Table of Contents
-
-------
-
 
 
 ## Data Sources
 
-### Features/Independent variables
+### Features variables
 
 #### Socio-Economic
 
@@ -29,13 +25,13 @@
 - [Middle Super Output Areas domestic electricity consumption - 2018](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/853708/MSOA_domestic_2018.csv/preview)
 - [Middle Super Output Areas non-domestic electricity consumption - 2018](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/853710/MSOA_non_domestic_electricity_2018.csv/preview)
 
+____
 
-
-### Target/Dependent variable
+### The Target variable
 
 - [Open Charge Map API](https://openchargemap.org/site/develop/api#intro)
 
-
+____
 
 ### Data Dictionary
 
