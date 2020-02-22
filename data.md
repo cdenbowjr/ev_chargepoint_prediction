@@ -45,6 +45,17 @@
 
 
 
+<table>
+    <tr>
+    	<td align='left' width='50%'><a href="business_problem.md#the-business-problem"><< Business Problem</a>	</td>
+    	<td align='right'><a href="eda1.md#eda">Exploratory Data Analysis I >></a></td>
+    </tr>
+</table>
+
+
+
+
+
 ## Document Navigator
 
 |                                                              |                                                              |                        |

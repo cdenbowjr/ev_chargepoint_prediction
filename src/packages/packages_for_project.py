@@ -53,13 +53,50 @@ import folium
 from pandas.io.json import json_normalize
 from shapely.geometry import Point,Polygon,LineString,MultiPolygon
 
-import postcodes_io_api
-api  = postcodes_io_api.Api(debug_http=True)
+#import postcodes_io_api
+#api  = postcodes_io_api.Api(debug_http=True)
 
 
 #Function to Load geojson file and convert to dataframe
 def load_geojson(filepath):
+    '''Function that loads a geojson file and converts it to a dataframe'''
     with open(filepath) as file:
         data = json.load(file)
 
     return json_normalize(data=data['features'])
+
+
+# Defining function to convert dataframe back to geojson
+def df_to_geojson(df, properties):
+    '''Function that converts dataframe to geojson format'''
+    geojson = {'type': 'FeatureCollection', 'features': []}
+    for _, row in df.iterrows():
+        if row['geometry.type'] == "Polygon":
+            feature = {'type': 'Feature',
+                       'properties': {},
+                       'geometry': {'type': 'Polygon', 'coordinates': []}}
+        else:
+            feature = {'type': 'Feature',
+                       'properties': {},
+                       'geometry': {'type': 'MultiPolygon', 'coordinates': []}}
+        feature['geometry']['coordinates'] = row["geometry.coordinates"]
+
+        for prop in properties:
+            feature['properties'][re.search(r"properties.(\w.*)", prop).group(1)] = row[prop]
+        geojson['features'].append(feature)
+    return geojson
+
+
+# Function to extract centroids from polygons and multipolygons
+def centroid_calc(x):
+    '''Function that extracts the centroids from a polygon or multipolygon'''
+    if x['geometry.type'] == "Polygon":
+        lat = Polygon(x['geometry.coordinates'][0]).centroid.xy[1][0]
+        long = Polygon(x['geometry.coordinates'][0]).centroid.xy[0][0]
+        return lat, long
+    else:
+
+        lat = Polygon(x['geometry.coordinates'][0][0]).centroid.xy[1][0]
+        long = Polygon(x['geometry.coordinates'][0][0]).centroid.xy[0][0]
+
+        return lat, long

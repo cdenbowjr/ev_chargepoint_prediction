@@ -61,6 +61,15 @@
 
 
 
+<table>
+    <tr>
+    	<td align='left' width='50%'><a href="https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain"><< Summary</a></td>
+    	<td align='right'><a href="https://github.com/cdenbowjr/ev_chargepoint_prediction/blob/master/data.md#data--methodology">Data & Methhodology >></a></td>
+    </tr>
+</table>
+
+
+
 ### Document Navigator
 
 |                                                              |                                                              |                        |
@@ -68,4 +77,5 @@
 | <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda1.md#eda">EDA - Part 1</a> \| <a href="eda2.md#eda">EDA - Part 2</a> | Analysis               |
 | <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                       | Findings & Conclusions |
 
-[Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)
+
+
