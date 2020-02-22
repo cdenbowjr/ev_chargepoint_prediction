@@ -1,4 +1,4 @@
-# Predicting Electric Vehicle Charge points locations in Britain
+# Predicting Electric Vehicle Charging Station locations in Britain
 
 <img src="https://i.cbc.ca/1.4415731.1511448387!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/electric-vehicle-charged.jpg"/>
 
@@ -6,9 +6,9 @@
 
 ## Summary
 
-**This project entailed building a machine learning classification model for predicting EV charge point locations based on socio-economic, transportation and geo-spatial characteristics acquired from public and government data.**
+**This project entailed building a machine learning classification model for predicting the presence of EV charging stations in a location based on socio-economic, transportation and geo-spatial characteristics acquired from public and government data.**
 
-It further explored areas of potential for new EV charge point installations using the unsupervised KMeans algorithm to cluster areas with favorable characteristics from the classification model. 
+The model was then used to further explored areas of potential for new EV charge point installations using the unsupervised KMeans algorithms to cluster areas with favorable characteristics from the classification model. 
 
 Raw data was preprocessed in order to ultimately train and test a Logistic Regression classifier and statistical testing of feature coefficients were done to confirm the factors that increased or decreased the likelihood of EV charge point installation. 
 
@@ -28,12 +28,31 @@ Preliminary results showed that the probability of an EV charge point being loca
 
 
 
+## Definitions
+
+**EV charge point/charging unit** – a single upstand or wall-mounted structure offering one or more socket outlets or tethered plugs suitable for charging EVs.
+
+**EV charging station** – a physical site with at least one charge point installed suitable for charging at least two EVs. A station usually (but not always) has other physical structures accompanying the charge point(s) such as an energy supply enclosure (feeder pillar), weather shelter, signage, protection barriers for the equipment.
+
+**Middle Layer Super Output Area (MSOA)** - A government tracked area that has a minimum population size of 5,000 and a maximum population size of 15,000
+
+| **Geography** | **Minimum population** | **Maximum population** | **Minimum number of households** | **Maximum number of households** |
+| ------------- | ---------------------- | ---------------------- | -------------------------------- | -------------------------------- |
+| LSOA          | 1,000                  | 3,000                  | 400                              | 1,200                            |
+| MSOA          | 5,000                  | 15,000                 | 2,000                            | 6,000                            |
+
+
+
 <table>
+    <th align='left'>Previous</th>
+    <th align='right'>Next</th>
     <tr>
     	<td align='left' width='50%'>Summary</td>
     	<td align='right' width="50%"><a href="business_problem.md#the-business-problem">The Business Problem >></a></td>
     </tr>
 </table>
+
+______
 
 ### Document Navigator
 
@@ -42,7 +61,7 @@ Preliminary results showed that the probability of an EV charge point being loca
 | <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda1.md#eda">EDA - Part 1</a> \| <a href="eda2.md#eda">EDA - Part 2</a> | Analysis               |
 | <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                       | Findings & Conclusions |
 
-
+____
 
 ## Project Organization
 

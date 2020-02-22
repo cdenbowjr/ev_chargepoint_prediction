@@ -105,9 +105,6 @@ The EDA approach will be to investigate the following:
 
 [Click here for 1.0-ced-chargepoint-analysis.ipynb showing coding](/notebooks/1.0-ced-chargepoint-analysis.ipynb)
 
-
-
-<p align='center'>
 ​    
 
 <table>
@@ -116,8 +113,6 @@ The EDA approach will be to investigate the following:
     	<td align='right'><a href="eda2.md#eda">Exploratory Data Analysis II >></a></td>
     </tr>
 </table>
-</p>
-
 
 
 
