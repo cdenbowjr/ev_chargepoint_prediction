@@ -31,7 +31,7 @@
 
 |       | Difficulties                                                 |
 | :---: | :----------------------------------------------------------- |
-|   1   | The public has limited variety of EV choice for purchase compared to gasoline and diesel vehicles |
+|   1   | <table>        <tr>    	<td align='left' width="50%"><a href="business_problem.md#the-business-problem"><< The Business Problem</a>	</td>    	<td align='right' width="50%"><a href="eda1.md#eda">Exploratory Data Analysis I >></a></td>    </tr></table> |
 |   2   | Buying a new EV costs more for the average resident than buying or keeping an existing gasoline/diesel vehicle |
 | **3** | **There is a sparse distribution of EV charging infrastructure across Britain resulting in slow adoption of this technology due to "Range Anxiety"** |
 
@@ -59,23 +59,16 @@
 | EV Manufacturers                                | Tesla, Nissan, Audi                          | Useful for manufacturers to understand areas that are likely to purchase an EV for their primary or secondary mode of transportation |
 | Electricity Distributers and Suppliers          | EDF Energy                                   | Useful for distributers and suppliers of electricity as it will identify the areas of the electricity grid that need investment for future demand from EV transportation |
 
+____
 
+### Navigator
 
 <table>
+    <th align='left'>Previous</th>
+    <th align='right'>Next</th>
     <tr>
     	<td align='left' width='50%'><a href="https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain"><< Summary</a></td>
     	<td align='right' width="50%"><a href="data.md#data--methodology">Data & Methodology >></a></td>
     </tr>
 </table>
-
-
-
-### Document Navigator
-
-|                                                              |                                                              |                        |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------- |
-| <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda1.md#eda">EDA - Part 1</a> \| <a href="eda2.md#eda">EDA - Part 2</a> | Analysis               |
-| <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                       | Findings & Conclusions |
-
-
 

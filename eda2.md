@@ -179,13 +179,6 @@ Large numbers of EV charge points in an area may occur where there is:
 
 The majority of the indicators in the Indices of Deprivation are measured as proportions or rates of the population that are deprived, and therefore use denominators based on population
 
-
-
 [Click here for the EDA 2 notebook code](/notebooks/2.0-ced-exploratory-data-analysis.ipynb)
-
-|                                                              |                                                              |                        |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------- |
-| <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda1.md#eda">EDA - Part 1</a> \| <a href="eda2.md#eda">EDA - Part 2</a> | Analysis               |
-| <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                       | Findings & Conclusions |
 
 [Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)

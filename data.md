@@ -41,27 +41,18 @@
 
 [data dictionary table](data_dictionary.md)
 
-## Methodology
+____
 
-
+### Navigator
 
 <table>
+    <th align='left'>Previous</th>
+    <th align='right'>Next</th>
     <tr>
     	<td align='left' width="50%"><a href="business_problem.md#the-business-problem"><< The Business Problem</a>	</td>
     	<td align='right' width="50%"><a href="eda1.md#eda">Exploratory Data Analysis I >></a></td>
     </tr>
 </table>
-
-
-
-
-
-## Document Navigator
-
-|                                                              |                                                              |                        |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------- |
-| <a href="business_problem.md#the-business-problem">The Business Problem</a> | <a href="eda1.md#eda">EDA - Part 1</a> \| <a href="eda2.md#eda">EDA - Part 2</a> | Analysis               |
-| <a href="data.md#data--methodology">Data & Methodology</a>   | Modelling & Evaluation                                       | Findings & Conclusions |
 
 [Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)
 

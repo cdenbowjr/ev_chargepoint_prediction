@@ -26,7 +26,7 @@ Preliminary results showed that the probability of an EV charge point being loca
 2. quality of the local environment based on quality of housing  (indoors)
 3. As the deprivation of adult skills set increases
 
-
+____
 
 ### Definitions
 
