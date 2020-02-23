@@ -120,15 +120,7 @@ Large numbers of EV charge points in an area may occur where there is higher wee
 
 
 
-<table>
-    <tr>
-        <td>
-            <img src="/reports/figures/correlations/transport_correlation" style= "height:150px">
-        </td>
-    </tr>
-</table>
-
-
+![Title](./reports/figures/correlations/transport_correlation.jpg)
 
 Large numbers of EV charge points in an area may occur where there is:
 
