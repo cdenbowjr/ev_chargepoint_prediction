@@ -310,7 +310,7 @@ def search_corr(df, features, targets, n):
     return matrix.loc[sort_list, :].round(3)
 
 
-def just_plot(df, variable_list, target_list, vmin=-1, vmax=1):
+def just_plot(df, axis_loc,variable_list, target_list, vmin=-1, vmax=1):
     '''Function plots truncated heatmap with target variables'''
     list1 = variable_list
     list2 = target_list
@@ -319,4 +319,4 @@ def just_plot(df, variable_list, target_list, vmin=-1, vmax=1):
     mask = np.zeros_like(matrix, dtype=bool)
     mask[np.triu_indices_from(mask)] = True
 
-    return sns.heatmap(round(matrix, 2), mask=mask, annot=True, cmap='winter',vmin=vmin,vmax=vmax)
+    return sns.heatmap(round(matrix, 2), mask=mask, annot=True, cmap='winter',vmin=vmin,vmax=vmax,ax=axis_loc)
