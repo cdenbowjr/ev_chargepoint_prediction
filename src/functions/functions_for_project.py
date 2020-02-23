@@ -224,6 +224,13 @@ def markdown_table(df, start, end, criteria):
 
 # Writing a function to display transformed features in a dataframe(Box Plot + Interactive Histogram)
 
+def make_markdown_table(varlist1, varlist2, n):
+    '''Function returns markdown table once given features and targets and the number of correlated variables'''
+
+    data = search_corr(varlist1, varlist2, n).iloc[:, -3:]
+    headers = data.columns
+    print(tabulate(data, headers=headers, tablefmt="github"))
+
 
 def get_features(df,start,
                  end,
