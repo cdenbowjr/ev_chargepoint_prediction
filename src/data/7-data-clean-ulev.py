@@ -10,9 +10,6 @@ travel.msoa11nm = travel.msoa11nm.apply(lambda x: x.replace("`","'"))
 ulev = pd.read_excel("../../data/raw/ev_registration/veh0132.xlsx",header=1,skiprows=5)
 
 
-
-
-
 lad2msoa = pd.read_csv("../../data/interim/lsoa_msoa.csv")
 lad2msoa = lad2msoa.drop(['lsoa11cd','lsoa11nm','pcds','region'],axis=1)
 lad2msoa = lad2msoa.drop_duplicates()
@@ -31,12 +28,12 @@ ulev = ulev.loc[:,:'2011_q4'].set_index(['lad13cd'])
 
 
 #Electric Vehicle owner likely to have 2 or more cars
-two_car = travel.reset_index().groupby(['ladcd']).agg({'two_car':sum}).reset_index()
+two_car = travel.reset_index().groupby(['ladcd']).agg({'total_cars':sum}).reset_index()
 two_car.columns = ['ladcd', 'two_car_tot']
 
 
 travel = pd.merge(travel.reset_index(),two_car,on='ladcd')
-travel['two_car_frac'] = travel.two_car/travel.two_car_tot
+travel['two_car_frac'] = travel.total_cars/travel.two_car_tot
 
 travel = pd.merge(travel,ulev,left_on='ladcd',right_on ='lad13cd')
 travel.loc[:,'2019_q2':'2011_q4'] = travel.loc[:,'2019_q2':'2011_q4'].applymap(lambda x : 4 if x == 'c' else x)
