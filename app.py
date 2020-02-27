@@ -24,7 +24,7 @@ from src.data import data_dictionary as data_d
 
 # from sklearn.preprocessing import StandardScaler
 
-msoa_uk = ffp.load_geojson('http://www.data4apurpose.com/client_html/Middle_Layer_Super_Output_Areas_December_2011_Boundaries_EW_BFC_simplified.geojson')
+msoa_uk = ffp.load_geojson('http://www.data4apurpose.com/client_html/Middle_Layer_Super_Output_Areas_December_2011_Boundaries_EW_BFC_ultra_simple.geojson')
 
 df = pd.read_csv('http://www.data4apurpose.com/client_html/full_processed_data.csv')
 central_london = ['City of London','Camden','Greenwich','Hackney','Hammersmith and Fulham','Islington','Kensington and Chelsea','Lambeth','Lewisham','Southwark','Tower Hamlets','Wandsworth','Westminster']
