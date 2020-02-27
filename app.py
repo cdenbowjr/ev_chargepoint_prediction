@@ -112,11 +112,13 @@ app.layout = html.Div(
 
 @app.callback(Output('text1','children'),[Input('var1','value')])
 def definitions(value):
-    return data_d.EV_britain().description[value]
+    #return data_d.EV_britain().description[value]
+    return value
 
 @app.callback(Output('text2','children'),[Input('var2','value')])
 def definitions(value):
-    return data_d.EV_britain().description[value]
+    #return data_d.EV_britain().description[value]
+    return value
 
 @app.callback(Output('map','srcDoc'),[Input('local_a','value'),Input('var2','value')])
 def remap(area,target):
