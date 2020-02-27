@@ -20,6 +20,7 @@ from sklearn.preprocessing import PowerTransformer, StandardScaler, MinMaxScaler
 from sklearn.base import BaseEstimator, TransformerMixin
 
 #Regular expressions and textual editing
+import requests
 import re
 from textwrap import wrap
 from tabulate import tabulate
@@ -71,10 +72,15 @@ class TransportAggregate(BaseEstimator, TransformerMixin):
 
 def load_geojson(filepath):
     '''Function that loads a geojson file and converts it to a dataframe'''
-    with open(filepath) as file:
-        data = json.load(file)
+    try:
+        with open(filepath) as file:
+            data = json.load(file)
 
-    return json_normalize(data=data['features'])
+        return json_normalize(data=data['features'])
+
+    except:
+        data = requests.get(filepath).json()
+        return json_normalize(data=data['features'])
 
 # Defining function to convert dataframe back to geojson
 def df_to_geojson(df, properties):
