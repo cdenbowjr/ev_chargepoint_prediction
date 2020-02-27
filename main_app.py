@@ -17,7 +17,7 @@ import folium
 # Regular expressions and textual editing
 # import re
 
-from app import functions_for_project as ffp
+from src.functions import functions_for_project as ffp
 # from src.data import preprocessing_functions as ppf
 from data.raw import data_dictionary as data_d
 
