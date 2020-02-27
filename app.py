@@ -120,8 +120,8 @@ def definitions(value):
 
 @app.callback(Output('text2','children'),[Input('var2','value')])
 def definitions(value):
-    #return data_d.EV_britain().description[value]
-    return value
+    return data_diction[value]
+    #return value
 
 @app.callback(Output('map','srcDoc'),[Input('local_a','value'),Input('var2','value')])
 def remap(area,target):
@@ -129,34 +129,34 @@ def remap(area,target):
     #print(*area,target)
     return open('search.html','r').read()
 
-# @app.callback(Output('graph', 'figure'),
-#                [Input('var1', 'value'),Input('var2', 'value')])
-# def clean_data(value1,value2):
-#     #print(df[value2])
-#     return {
-#                                      'data': [
-#                                          dict(
-#                                              x=df[value1],
-#                                              y=df[value2],
-#                                              #text=merged_df[merged_df['lad13nm'] == i]['metropolitan'],
-#                                              mode='markers',
-#                                              opacity=0.7,
-#                                              marker={
-#                                                  'color':'red',
-#                                                  'size': 4,
-#                                                  'line': {'width': 0.5, 'color': 'black'}
-#                                              },
-#
-#                                          )
-#                                      ],
-#                                      'layout': dict(
-#                                          xaxis={'type': 'linear', 'title': value1},
-#                                          yaxis={'type': 'linear','title': value2},
-#                                          margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
-#                                          legend={'x': 0, 'y': 1},
-#                                          hovermode='closest'
-#                                      )
-#                                  }
+@app.callback(Output('graph', 'figure'),
+               [Input('var1', 'value'),Input('var2', 'value')])
+def clean_data(value1,value2):
+    #print(df[value2])
+    return {
+                                     'data': [
+                                         dict(
+                                             x=df[value1],
+                                             y=df[value2],
+                                             #text=merged_df[merged_df['lad13nm'] == i]['metropolitan'],
+                                             mode='markers',
+                                             opacity=0.7,
+                                             marker={
+                                                 'color':'red',
+                                                 'size': 4,
+                                                 'line': {'width': 0.5, 'color': 'black'}
+                                             },
+
+                                         )
+                                     ],
+                                     'layout': dict(
+                                         xaxis={'type': 'linear', 'title': value1},
+                                         yaxis={'type': 'linear','title': value2},
+                                         margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
+                                         legend={'x': 0, 'y': 1},
+                                         hovermode='closest'
+                                     )
+                                 }
 #
 # app.layout = html.Div([html.H1(id='title',children='Hello'),
 #     html.Iframe(id='choropleth',srcDoc=open('data/processed/search.html','r').read(),width='100%',height='600'),

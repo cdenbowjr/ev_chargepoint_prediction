@@ -327,11 +327,7 @@ def EV_britain():
     import pandas as pd
 
     df = pd.read_csv('http://www.data4apurpose.com/client_html/full_dataset_msoa.csv')
-    # try:
-    #     df = pd.read_csv("../../data/interim/msoa/full_dataset_msoa.csv")
-    #
-    # except:
-    #     df = pd.read_csv("data/interim/msoa/full_dataset_msoa.csv")
+
 
     class DataDictionary:
         def __init__(self, data, target, description):
