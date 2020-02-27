@@ -38,6 +38,9 @@ df = pd.merge(df, msoa_uk, left_on='msoa11cd', right_on='properties.msoa11cd')
 
 lad = [{'label':area, 'value':area} for area in df.lad13nm.unique()]
 
+data_diction = data_d.EV_britain().description
+
+
 # Function to extract centroids from polygons and multipolygons
 def centroid_calc(x):
     if x['geometry.type'] == "Polygon":
@@ -112,8 +115,8 @@ app.layout = html.Div(
 
 @app.callback(Output('text1','children'),[Input('var1','value')])
 def definitions(value):
-    #return data_d.EV_britain().description[value]
-    return value
+    return data_diction[value]
+    #return value
 
 @app.callback(Output('text2','children'),[Input('var2','value')])
 def definitions(value):
