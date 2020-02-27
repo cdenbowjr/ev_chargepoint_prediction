@@ -92,3 +92,5 @@ target/
 
 venv
 *.pyc
+
+test.py
