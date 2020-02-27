@@ -24,7 +24,7 @@ from src.data import data_dictionary as data_d
 
 # from sklearn.preprocessing import StandardScaler
 
-msoa_uk = ffp.load_geojson('http://www.data4apurpose.com/client_html/Middle_Layer_Super_Output_Areas_December_2011_Boundaries_EW_BFC_ultra_simple.geojson')
+msoa_uk = ffp.load_geojson('http://www.data4apurpose.com/client_html/Middle_Layer_Super_Output_Areas_December_2011_Boundaries_EW_BFC_simplified.geojson')
 
 df = pd.read_csv('http://www.data4apurpose.com/client_html/full_processed_data.csv')
 central_london = ['City of London','Camden','Greenwich','Hackney','Hammersmith and Fulham','Islington','Kensington and Chelsea','Lambeth','Lewisham','Southwark','Tower Hamlets','Wandsworth','Westminster']
@@ -119,41 +119,39 @@ def definitions(value):
     return data_d.EV_britain().description[value]
 
 @app.callback(Output('map','srcDoc'),[Input('local_a','value'),Input('var2','value')])
-
 def remap(area,target):
     plot_area(df, target, *area)
-    print(*area,target)
+    #print(*area,target)
     return open('search.html','r').read()
 
-@app.callback(Output('graph', 'figure'),
-               [Input('var1', 'value'),Input('var2', 'value')])
-
-def clean_data(value1,value2):
-    #print(df[value2])
-    return {
-                                     'data': [
-                                         dict(
-                                             x=df[value1],
-                                             y=df[value2],
-                                             #text=merged_df[merged_df['lad13nm'] == i]['metropolitan'],
-                                             mode='markers',
-                                             opacity=0.7,
-                                             marker={
-                                                 'color':'red',
-                                                 'size': 4,
-                                                 'line': {'width': 0.5, 'color': 'black'}
-                                             },
-
-                                         )
-                                     ],
-                                     'layout': dict(
-                                         xaxis={'type': 'linear', 'title': value1},
-                                         yaxis={'type': 'linear','title': value2},
-                                         margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
-                                         legend={'x': 0, 'y': 1},
-                                         hovermode='closest'
-                                     )
-                                 }
+# @app.callback(Output('graph', 'figure'),
+#                [Input('var1', 'value'),Input('var2', 'value')])
+# def clean_data(value1,value2):
+#     #print(df[value2])
+#     return {
+#                                      'data': [
+#                                          dict(
+#                                              x=df[value1],
+#                                              y=df[value2],
+#                                              #text=merged_df[merged_df['lad13nm'] == i]['metropolitan'],
+#                                              mode='markers',
+#                                              opacity=0.7,
+#                                              marker={
+#                                                  'color':'red',
+#                                                  'size': 4,
+#                                                  'line': {'width': 0.5, 'color': 'black'}
+#                                              },
+#
+#                                          )
+#                                      ],
+#                                      'layout': dict(
+#                                          xaxis={'type': 'linear', 'title': value1},
+#                                          yaxis={'type': 'linear','title': value2},
+#                                          margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
+#                                          legend={'x': 0, 'y': 1},
+#                                          hovermode='closest'
+#                                      )
+#                                  }
 #
 # app.layout = html.Div([html.H1(id='title',children='Hello'),
 #     html.Iframe(id='choropleth',srcDoc=open('data/processed/search.html','r').read(),width='100%',height='600'),
