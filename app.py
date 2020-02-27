@@ -24,9 +24,9 @@ from src.data import data_dictionary as data_d
 
 # from sklearn.preprocessing import StandardScaler
 
-msoa_uk = ffp.load_geojson('data/raw/geo_spatial/Middle_Layer_Super_Output_Areas_December_2011_Boundaries_EW_BFC_simple.geojson')
+msoa_uk = ffp.load_geojson('Middle_Layer_Super_Output_Areas_December_2011_Boundaries_EW_BFC_simple.geojson')
 
-df = pd.read_csv('data/processed/full_processed_data.csv')
+df = pd.read_csv('full_processed_data.csv')
 central_london = ['City of London','Camden','Greenwich','Hackney','Hammersmith and Fulham','Islington','Kensington and Chelsea','Lambeth','Lewisham','Southwark','Tower Hamlets','Wandsworth','Westminster']
 
 # scaler = StandardScaler()
@@ -61,7 +61,7 @@ def plot_area(merged_df, feature_var, *args):
                                          ['properties.msoa11cd', 'properties.msoa11nm', 'properties.objectid',
                                           'properties.st_areashape', 'properties.st_lengthshape'])
 
-        with open('data/processed/search.geojson', 'w') as json_file:
+        with open('search.geojson', 'w') as json_file:
             json.dump(search_area_json, json_file)
 
         start_lat = search_area.apply(centroid_calc, axis=1).apply(lambda x: x[0]).mean()
@@ -69,13 +69,13 @@ def plot_area(merged_df, feature_var, *args):
 
         area_map = folium.Map(location=(start_lat, start_lon), zoom_start=11)
 
-        area_map.choropleth(geo_data='data/processed/search.geojson', data=search_area,
+        area_map.choropleth(geo_data='search.geojson', data=search_area,
                             columns=["properties.msoa11cd", feature_var],
                             key_on='feature.properties.msoa11cd', fill_color='Spectral_r', highlight=True, name="areas",
                             legend_name=data_d.EV_britain().description[feature_var])
 
         folium.LayerControl().add_to(area_map)
-        area_map.save("data/processed/search.html")
+        area_map.save("search.html")
 
     except:
         print("This is not a council area in London")
@@ -104,7 +104,7 @@ app.layout = html.Div(
 
         html.Div(
             [html.H1("Mapping"),
-             html.Iframe(id='map',srcDoc=open('data/processed/search.html','r').read(),width='100%',height='500px'),
+             html.Iframe(id='map',srcDoc=open('search.html','r').read(),width='100%',height='500px'),
              dcc.Dropdown(id='local_a',value=central_london,options=lad,multi=True)
              ],style= {'width': '50%','float':'right','display': 'inline-block'})
     ]
@@ -123,7 +123,7 @@ def definitions(value):
 def remap(area,target):
     plot_area(df, target, *area)
     print(*area,target)
-    return open('data/processed/search.html','r').read()
+    return open('search.html','r').read()
 
 @app.callback(Output('graph', 'figure'),
                [Input('var1', 'value'),Input('var2', 'value')])
