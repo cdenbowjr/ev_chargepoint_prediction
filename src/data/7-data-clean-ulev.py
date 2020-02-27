@@ -11,7 +11,7 @@ ulev = pd.read_excel("../../data/raw/ev_registration/veh0132.xlsx",header=1,skip
 
 
 lad2msoa = pd.read_csv("../../data/interim/lsoa_msoa.csv")
-lad2msoa = lad2msoa.drop(['lsoa11cd','lsoa11nm','pcds','region'],axis=1)
+lad2msoa = lad2msoa.drop(['lsoa11cd','lsoa11nm','pcds','region','oa11cd'],axis=1)
 lad2msoa = lad2msoa.drop_duplicates()
 lad2msoa = lad2msoa.set_index(['msoa11cd','msoa11nm'])
 

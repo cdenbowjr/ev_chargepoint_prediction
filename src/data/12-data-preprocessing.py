@@ -10,7 +10,7 @@ df = pd.read_csv('../../data/interim/msoa/full_dataset_msoa.csv')
 categories = df.loc[:,'msoa11cd':'lad13nm']
 
 part1_droplist = ['education_score','housebar_score','livenv_score','health_score','crime_score','chanyp_score']
-part4_droplist = ['two_car_tot','two_car_frac','region']
+part4_droplist = ['two_car_tot','two_car_frac']
 
 #Columns for processing in the pipeline
 part1 = df.loc[:,"income_score":"adultskills_score"].drop(part1_droplist,axis=1).columns

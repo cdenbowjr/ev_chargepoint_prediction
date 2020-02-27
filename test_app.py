@@ -54,7 +54,7 @@ def centroid_calc(x):
 #
 def plot_area(merged_df, feature_var, *args):
 
-
+    
     try:
         search_area = merged_df[merged_df['properties.msoa11nm'].str.contains('|'.join(args))]
         search_area_json = ffp.df_to_geojson(search_area,
@@ -99,13 +99,7 @@ app.layout = html.Div(
          html.H3('Target Variable'),
          dcc.Dropdown(id='var2',value='charge_points',options=[{'label':x,'value':x} for x in df.columns[4:]]),
          html.Div(id='text2',children='...waiting')
-         ],style= {'width': '50%', 'display': 'inline-block'}),
-
-        html.Div(
-            [html.H1("Mapping"),
-             html.Iframe(id='map',srcDoc=open('data/processed/search.html','r').read(),width='100%',height='500px'),
-             dcc.Dropdown(id='local_a',value=central_london,options=lad,multi=True)
-             ],style= {'width': '50%','float':'right','display': 'inline-block'})
+         ],style= {'width': '50%', 'display': 'inline-block'})
     ]
 )
 
