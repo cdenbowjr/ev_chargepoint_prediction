@@ -86,8 +86,9 @@ def plot_area(merged_df, feature_var, *args):
 # print(plot_area(merged_df,"crime_score","Southwark"))
 
 
-server = Flask(__name__)
+
 app = dash.Dash('__name__')
+server = app.server
 
 app.layout = html.Div(
     [html.Div(
