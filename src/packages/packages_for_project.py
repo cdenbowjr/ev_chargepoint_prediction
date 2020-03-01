@@ -31,6 +31,7 @@ from sklearn.decomposition import PCA
 #Modelling algorithms and model evaluation tools
 from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.model_selection import cross_val_score
+from sklearn.metrics import r2_score,mean_squared_error
 
 #Regular expressions and textual editing
 import re

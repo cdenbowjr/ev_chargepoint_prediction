@@ -1,29 +1,37 @@
 # Scientific computing packages
 import numpy as np
 
-#Dataframe related
+# Dataframe related
 import pandas as pd
 
-#Statistical Inference
+# Statistical Inference
 from scipy.stats import norm
 
-#Data Visualisation# Geo-spatial Functions
+# Data Visualisation# Geo-spatial Functions
 import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib.cm as cm
 import json
-from pandas.io.json import json_normalize
-from shapely.geometry import Point,Polygon,LineString,MultiPolygon
+import folium
 
-#Machine Learning functions
+from shapely.geometry import Polygon
+
+# Machine Learning functions
 from sklearn.preprocessing import PowerTransformer, StandardScaler, MinMaxScaler
 from sklearn.base import BaseEstimator, TransformerMixin
 
-#Regular expressions and textual editing
+
+# Regular expressions and textual editing
 import requests
 import re
 from textwrap import wrap
 from tabulate import tabulate
+
+# Data dictionary
+try:
+    from src.data.data_dictionary import EV_britain
+except:
+    print("hello")
 
 class TransportAggregate(BaseEstimator, TransformerMixin):
     def __init__(self):
@@ -76,11 +84,11 @@ def load_geojson(filepath):
         with open(filepath) as file:
             data = json.load(file)
 
-        return json_normalize(data=data['features'])
+        return pd.json_normalize(data=data['features'])
 
     except:
         data = requests.get(filepath).json()
-        return json_normalize(data=data['features'])
+        return pd.json_normalize(data=data['features'])
 
 # Defining function to convert dataframe back to geojson
 def df_to_geojson(df, properties):
@@ -297,6 +305,8 @@ def transform_and_plot(df,start,
                        remove=[],
                        ax=None):
 
+    if remove is None:
+        remove = []
     features = get_features(df,start, end, power, log, stand, aggreg, remove)
     sns.set_style(style='white')
 
@@ -329,3 +339,63 @@ def just_plot(df, axis_loc,variable_list, target_list, vmin=-1, vmax=1):
     mask[np.triu_indices_from(mask)] = True
 
     return sns.heatmap(round(matrix, 2), mask=mask, annot=True, cmap='winter',vmin=vmin,vmax=vmax,ax=axis_loc)
+
+
+def centroid_calc(x):
+    '''Function to extract centroids from polygons and multipolygons'''
+    if x['geometry.type'] == "Polygon":
+        lat = Polygon(x['geometry.coordinates'][0]).centroid.xy[1][0]
+        long = Polygon(x['geometry.coordinates'][0]).centroid.xy[0][0]
+        return lat, long
+    else:
+
+        lat = Polygon(x['geometry.coordinates'][0][0]).centroid.xy[1][0]
+        long = Polygon(x['geometry.coordinates'][0][0]).centroid.xy[0][0]
+
+        return lat, long
+
+
+def plot_area(merged_df, feature_var, *args):
+    try:
+        search_area = merged_df[merged_df['properties.msoa11nm'].str.contains(
+            '|'.join(args))]
+        search_area_json = df_to_geojson(search_area, [
+            'properties.msoa11cd', 'properties.msoa11nm',
+            'properties.objectid', 'properties.st_areashape',
+            'properties.st_lengthshape'
+        ])
+
+        with open('search.geojson', 'w') as json_file:
+            json.dump(search_area_json, json_file)
+
+        start_lat = search_area.apply(centroid_calc,
+                                      axis=1).apply(lambda x: x[0]).mean()
+        start_lon = search_area.apply(centroid_calc,
+                                      axis=1).apply(lambda x: x[1]).mean()
+
+        area_map = folium.Map(location=(start_lat, start_lon), zoom_start=11)
+
+        try:
+            legendname = EV_britain().description[feature_var]
+            print("this is the try")
+
+        except:
+            legendname = EV_britain().description[feature_var]
+            print("this is the except")
+
+        area_map.choropleth(
+            geo_data='search.geojson',
+            data=search_area,
+            columns=["properties.msoa11cd", feature_var],
+            key_on='feature.properties.msoa11cd',
+            fill_color='Spectral_r',
+            highlight=True,
+            name="areas",
+            legend_name=legendname)
+
+        folium.LayerControl().add_to(area_map)
+        area_map.save("search.html")
+
+    except:
+        print("This is not a council area in London")
+        print(legendname)
