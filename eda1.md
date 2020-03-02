@@ -102,5 +102,4 @@ ____
     	<td align='right'><a href="eda2.md#eda">Exploratory Data Analysis II >></a></td>
     </tr>
 </table>
-
 [Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)

@@ -182,4 +182,17 @@ ____
 
 [Click here for the Python Code](/notebooks/2.0-ced-exploratory-data-analysis.ipynb)
 
+
+
+### Navigator
+
+<table>
+    <th align='left'>Previous</th>
+    <th align='right'>Next</th>
+    <tr>
+    	<td align='left'><a href="eda1.md#eda"><< Exploratory Data Analysis I</a></td>
+    	<td align='right'><a href="modelling.md#eda">Modelling >></a></td>
+    </tr>
+</table>
+
 [Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)
