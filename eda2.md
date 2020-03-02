@@ -131,7 +131,7 @@ Large numbers of EV charge points in an area may occur where there is:
 
 #### Collinearity
 
-![nd_meters_correlation](/reports\figures\correlations\nd_meters_correlation.jpg)
+![](./reports\figures\correlations\nd_meters_correlation.jpg)
 
 **The higher the number of non-domestic electricity meters in an area**:
 
@@ -143,7 +143,7 @@ Large numbers of EV charge points in an area may occur where there is:
 
 ____
 
-![geo_bar_correlation](/reports\figures\correlations\geo_bar_correlation.jpg)
+![geo_bar_correlation](./reports\figures\correlations\geo_bar_correlation.jpg)
 
 **The harder it is to access housing and local services because of physical proximity to those services in an area**:
 
@@ -156,7 +156,7 @@ ____
 
 ____
 
-![d_meters_correlation](/reports\figures\correlations\d_meters_correlation.jpg)
+![d_meters_correlation](./reports\figures\correlations\d_meters_correlation.jpg)
 
 **The higher the number of domestic electricity meters in an area**:
 
