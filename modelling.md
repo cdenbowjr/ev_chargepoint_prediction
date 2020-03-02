@@ -1,7 +1,7 @@
 # Modelling & Evaluation
 
 <table>
-    <tc><td><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg" style= "width:50%"></td>
+    <tc><td rowspan="2"><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg" style= "width:50%"></td>
    <tr><td><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg"></td>
     <td><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg"></td></tr></tc>
 </table>
