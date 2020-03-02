@@ -129,7 +129,7 @@ Large numbers of EV charge points in an area may occur where there is:
 
 ![Title](./reports/figures/correlations/electricity_correlation.jpg)
 
-#### Collinearity
+### Collinearity
 
 ![](/reports/figures/correlations/nd_meters_correlation.jpg)
 
