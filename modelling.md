@@ -1,8 +1,8 @@
 # Modelling & Evaluation
 
 <table>
-    <col width="55%">
-  	<col width="45%">
+    <col width="65%">
+  	<col width="35%">
     <tr>
         <td rowspan="2"><img src="./reports/figures/modelling/logistic_regression_confusion_matrix_altered.jpg"></td>
         <td><img src="./reports/figures/modelling/logistic_regression_roc_curves.jpg" width="75%"></td>
