@@ -5,10 +5,10 @@
   	<col width=45%">
     <tr>
         <td rowspan="2"><img src="./reports/figures/modelling/logistic_regression_confusion_matrix_altered.jpg"></td>
-        <td><img src="./reports/figures/modelling/logistic_regression_roc_curves.jpg" width = "100%"></td>
+        <td><img src="./reports/figures/modelling/logistic_regression_roc_curves.jpg"></td>
     </tr>
     <tr>
-        <td><img src="./reports/figures/modelling/logistic_regression_pr_curves.jpg" width = "100%"></td>
+        <td><img src="./reports/figures/modelling/logistic_regression_pr_curves.jpg"></td>
     </tr>
 </table>
 
