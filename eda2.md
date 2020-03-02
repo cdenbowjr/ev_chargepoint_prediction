@@ -37,7 +37,6 @@ The variables that had *normal distributions* in the data across all MSOAs were:
         </td>
     </tr>
 </table>
-
 ________________________________
 ***Transport & Car related***<br>
 
@@ -57,7 +56,6 @@ ________________________________
         </td>
     </tr>
 </table>
-
 ------
 
 ### Transformations
@@ -133,11 +131,50 @@ Large numbers of EV charge points in an area may occur where there is:
 
 #### Collinearity
 
+![nd_meters_correlation](/reports\figures\correlations\nd_meters_correlation.jpg)
+
+**The higher the number of non-domestic electricity meters in an area**:
+
+1. the higher the weekday number of journeys done by driving to/from employers business in the area
+2. the higher the weekday number of journeys done by car pooling to/from employers business in the area
+3. the higher the number of charge points in the area
+
+> ***This may be speaking to a more industrial/commercial zone where people use their cars to conduct business***
+
+____
+
+![geo_bar_correlation](/reports\figures\correlations\geo_bar_correlation.jpg)
+
+**The harder it is to access housing and local services because of physical proximity to those services in an area**:
+
+1. the higher the number of people who own 3+ cars
+2. the larger the geographic area in square meters
+3. the higher the median 2018 domestic electricity consumption in the area
+4. the lower the weekday number of journeys done by bus/coach to work
+
+> ***`Access to housing and local services` may be a variable that is speaking about the differences between urban and rural areas***
+
+____
+
+![d_meters_correlation](/reports\figures\correlations\d_meters_correlation.jpg)
+
+**The higher the number of domestic electricity meters in an area**:
+
+1. the higher the number of people who own 1 car in the area
+2. the higher the working age population size in the area
+3. the higher the total population size in the area
+
+> ***This may be speaking to a more population dense area on the high end and a sparse population density on the lower end***
+
+____
+
+### Variation
 
 
 
+>  **60 principal components** in the dataset, explain 100% of the variance, **10 principal components** in the dataset, explain 80% of the variance
 
-The majority of the indicators in the Indices of Deprivation are measured as proportions or rates of the population that are deprived, and therefore use denominators based on population
+![](/reports/figures/pca/explained_variance.jpg)
 
 
 
