@@ -1,10 +1,20 @@
 # Modelling & Evaluation
 
+<table>
+    <tc><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg"></tc>
+    <tc><tr><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg"></tr><tr><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg"></tr>
+    </tc>
+</table>
+
+
+
+![](/reports/figures/modelling/logistic_regression_confusion_matrix.jpg)
 
 
 
 
 
+![](/reports/figures/modelling/logistic_regression_roc_curves.jpg)![](/reports/figures/modelling/logistic_regression_pr_curves.jpg)
 
 
 
