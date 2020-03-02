@@ -1,9 +1,9 @@
 # Modelling & Evaluation
 
 <table>
-    <tc><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg" style= "width:50%"></tc>
-    <tc><tr><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg"></tr><tr><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg"></tr>
-    </tc>
+    <tc><td><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg" style= "width:50%"></td></tc>
+    <tc><td><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg"></td>
+    <td><img src="/reports/figures/modelling/logistic_regression_confusion_matrix.jpg"></td></tc>
 </table>
 
 
