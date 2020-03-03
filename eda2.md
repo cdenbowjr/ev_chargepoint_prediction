@@ -190,8 +190,8 @@ ____
     <th align='left'>Previous</th>
     <th align='right'>Next</th>
     <tr>
-    	<td align='left'><a href="eda1.md#eda"><< Exploratory Data Analysis I</a></td>
-    	<td align='right'><a href="modelling.md#eda">Modelling >></a></td>
+    	<td align='left'><a href="eda1.md"><< Exploratory Data Analysis I</a></td>
+    	<td align='right'><a href="modelling.md">Modelling >></a></td>
     </tr>
 </table>
 

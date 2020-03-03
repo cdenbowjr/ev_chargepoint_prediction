@@ -62,8 +62,9 @@ Below are the results:
     <th align='left'>Previous</th>
     <th align='right'>Next</th>
     <tr>
-    	<td align='left'><a href="eda2.md#eda"><< Exploratory Data Analysis II</a></td>
-    	<td align='right'><a href="analysis.md#eda">Analysis >></a></td>
+    	<td align='left'><a href="modelling.md"><< Modelling</a></td>
+    	<td align='right'><a href="analysis.md">Analysis >></a></td>
     </tr>
 </table>
+
 

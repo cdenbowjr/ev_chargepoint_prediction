@@ -49,6 +49,4 @@ ____
     	<td align='right' width="50%"><a href="eda1.md#eda">Exploratory Data Analysis I >></a></td>
     </tr>
 </table>
-
-[Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)
-
+[Back to Beginning](README.md#predicting-electric-vehicle-charging-station-locations-in-britain)

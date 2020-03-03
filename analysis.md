@@ -96,3 +96,21 @@ The probability of an EV charge point being located in an area:
 4. If the area is classified as a metropolitan area
 5. As the lack of attainment and skills of adults in the local population increases
 6. As the quality of housing (indoors) decreases
+
+
+
+### The Code
+
+[Click here for the Python Code](/notebooks/4.0-ced-analysis.ipynb)
+
+### Navigator
+
+<table>
+    <th align='left'>Previous</th>
+    <th align='right'>Next</th>
+    <tr>
+    	<td align='left'><a href="eda2.md#eda"><< Exploratory Data Analysis II</a></td>
+    	<td align='right'><a href="README.md#predicting-electric-vehicle-charging-station-locations-in-britain">Analysis >></a></td>
+    </tr>
+</table>
+
