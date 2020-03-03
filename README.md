@@ -18,17 +18,35 @@ Raw data was preprocessed in order to ultimately train and test a Logistic Regre
 
 ## Findings
 
-Preliminary results showed that the probability of an EV charge point being located in an area:
+Statistical results showed that the probability of an EV charge point being located in an area:
 
-<u>Increases</u>
+***Increases***
 
-1. As the average weekday number of journeys done by driving to/from employers business increases
+1. As the 2018:
+   - absolute non-domestic electricity consumption in the area increases
+   - median domestic electricity consumption in the area increases
+   - ratio of domestic electricity consumption and non-domestic electricity consumption in the area increases
+2. As the Ultra low emission vehicles (ULEVs) licensed at the end of 2017 Q3 and the end of 2019 Q1 in the area increases
+3. As the average weekday number of journeys done:
+   - by driving to/from employers business increases
+   - by rail to/from shopping increases
+   - by bus/coach to/from holidays increases
+4. As physical accessibility of housing and local services gets harder
 
-<u>Decreases</u>
+****
 
-1. As the quality of housing in that area decreases
-2. quality of the local environment based on quality of housing  (indoors)
-3. As the deprivation of adult skills set increases
+***Decreases***
+
+1. As the 2018:
+   - ratio of median domestic electricity consumption and median 2018 non-domestic electricity consumption in the area increases
+   - mean domestic electricity consumption in the area increases
+2. As the Ultra low emission vehicles (ULEVs) licensed at the end of 2015 Q2 in the area increases
+3. As the average weekday number of journeys done:
+   - by rail to/from work increases
+   - by cycling to/from holidays increases
+4. If the area is classified as a metropolitan area
+5. As the lack of attainment and skills of adults in the local population increases
+6. As the quality of housing (indoors) decreases
 
 ____
 

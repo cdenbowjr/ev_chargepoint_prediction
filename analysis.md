@@ -10,13 +10,13 @@ ____
 
 The probability of an EV charge point being located in an area:
 
-<u>Increases</u>
+***Increases***
 
 1. As the average weekday number of journeys done by driving to/from employers business increases
 2. As the average weekday number of journeys done by rail to/from shopping increases
 3. As the average weekday number of journeys done by bus/coach to/from holidays increases
 
-<u>Decreases</u>
+***Decreases***
 
 1. As the average distance of a car park from the centre of the MSOA increases
 2. As the lack of attainment and skills in the local population relating to adult skills increases
@@ -28,13 +28,13 @@ ____
 
 The probability of an EV charge point being located in an area:
 
-<u>Increases</u>
+***Increases***
 
 1. As the 2018 non-domestic electricity consumption increases
 2. As the number of car parks within the area increases
 3. As the average weekday number of journeys done by driving to/from employers business increases
 
-<u>Decreases</u>
+***Decreases***
 
 1. As the average weekday number of journeys done by rail to/from work increases
 2. As the number of non-domestic electricity meters within the area increases
@@ -67,24 +67,30 @@ A regularised logistic regression model was run using the statsmodel packages le
 
 The probability of an EV charge point being located in an area:
 
-<u>Increases</u>
+***Increases***
 
-1. As the 2018 non-domestic electricity consumption increases
+1. As the 2018:
+   - absolute non-domestic electricity consumption in the area increases
+   - median domestic electricity consumption in the area increases
+   - ratio of domestic electricity consumption and non-domestic electricity consumption in the area increases
 2. As the Ultra low emission vehicles (ULEVs) licensed at the end of 2017 Q3 and the end of 2019 Q1 in the area increases
-3. As the average weekday number of journeys done by driving to/from employers business increases
-4. As the average weekday number of journeys done by rail to/from shopping increases
-5. As the average weekday number of journeys done by bus/coach to/from holidays increases
-6. As the ratio of 2018 domestic electricity consumption and non-domestic electricity consumption in the area increases
-7. As the median 2018 domestic electricity consumption in the area increases
-8. As physical accessibility of housing and local services gets harder
+3. As the average weekday number of journeys done:
+   - by driving to/from employers business increases
+   - by rail to/from shopping increases
+   - by bus/coach to/from holidays increases
+4. As physical accessibility of housing and local services gets harder
 
-<u>Decreases</u>
+****
 
-1. As the ratio of median 2018 domestic electricity consumption and median 2018 non-domestic electricity consumption in the area increases
+***Decreases***
+
+1. As the 2018:
+   - ratio of median domestic electricity consumption and median 2018 non-domestic electricity consumption in the area increases
+   - mean domestic electricity consumption in the area increases
 2. As the Ultra low emission vehicles (ULEVs) licensed at the end of 2015 Q2 in the area increases
-3. As the average weekday number of journeys done by rail to/from work increases
-4. As the mean 2018 domestic electricity consumption in the area increases
-5. As the average weekday number of journeys done by cycling to/from holidays increases
-6. If the area is classified as a metropolitan area
-7. As the lack of attainment and skills in the local population relating to adult skills increases
-8. As the quality of housing (indoors) decreases
+3. As the average weekday number of journeys done:
+   - by rail to/from work increases
+   - by cycling to/from holidays increases
+4. If the area is classified as a metropolitan area
+5. As the lack of attainment and skills of adults in the local population increases
+6. As the quality of housing (indoors) decreases
