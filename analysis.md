@@ -65,6 +65,8 @@ A regularised logistic regression model was run using the statsmodel packages le
 |               2019_q1 |   1.5625 |       0.744 |  2.099 |     0.036 |     0.103 |     3.022 |
 |         cycle_holiday |  -0.6321 |       0.321 | -1.968 |     0.049 |    -1.262 |    -0.003 |
 
+![](/reports/figures/analysis/statsmodel_coefficient.jpg)
+
 The probability of an EV charge point being located in an area:
 
 ***Increases***
