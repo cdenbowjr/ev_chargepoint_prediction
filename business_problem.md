@@ -66,8 +66,11 @@ ____
     <th align='left'>Previous</th>
     <th align='right'>Next</th>
     <tr>
-    	<td align='left' width='50%'><a href="https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain"><< Summary</a></td>
+    	<td align='left' width='50%'><a href="README.md#predicting-electric-vehicle-charge-points-locations-in-britain"><< Summary</a></td>
     	<td align='right' width="50%"><a href="data.md#data--methodology">Data & Methodology >></a></td>
     </tr>
 </table>
+
+
+
 

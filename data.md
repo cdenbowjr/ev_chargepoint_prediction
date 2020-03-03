@@ -46,7 +46,8 @@ ____
     <th align='right'>Next</th>
     <tr>
     	<td align='left' width="50%"><a href="business_problem.md#the-business-problem"><< The Business Problem</a>	</td>
-    	<td align='right' width="50%"><a href="eda1.md#eda">Exploratory Data Analysis I >></a></td>
+    	<td align='right' width="50%"><a href="eda1.md#exploratory-data-analysis-eda---target-variable">Exploratory Data Analysis I >></a></td>
     </tr>
 </table>
-[Back to Beginning](README.md#predicting-electric-vehicle-charging-station-locations-in-britain)
+
+[Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)

@@ -109,8 +109,9 @@ The probability of an EV charge point being located in an area:
     <th align='left'>Previous</th>
     <th align='right'>Next</th>
     <tr>
-    	<td align='left'><a href="eda2.md#eda"><< Exploratory Data Analysis II</a></td>
-    	<td align='right'><a href="README.md#predicting-electric-vehicle-charging-station-locations-in-britain">Analysis >></a></td>
+    	<td align='left'><a href="modelling.md"><< Modelling</a></td>
+    	<td align='right'><a href="README.md#predicting-electric-vehicle-charging-station-locations-in-britain">Summary >></a></td>
     </tr>
 </table>
 
+[Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)

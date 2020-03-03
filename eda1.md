@@ -99,7 +99,8 @@ ____
     <th align='right'>Next</th>
     <tr>
     	<td align='left'><a href="data.md#data--methodology"><< Data & Methodology</a>	</td>
-    	<td align='right'><a href="eda2.md#eda">Exploratory Data Analysis II >></a></td>
+    	<td align='right'><a href="eda2.md#exploratory-data-analysis-eda---feature-variables">Exploratory Data Analysis II >></a></td>
     </tr>
 </table>
+
 [Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)
