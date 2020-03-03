@@ -355,7 +355,7 @@ def centroid_calc(x):
         return lat, long
 
 
-def plot_area(merged_df, feature_var, *args):
+def plot_area(merged_df, feature_var,lat=1,long=1, *args):
     try:
         search_area = merged_df[merged_df['properties.msoa11nm'].str.contains(
             '|'.join(args))]
@@ -374,14 +374,15 @@ def plot_area(merged_df, feature_var, *args):
                                       axis=1).apply(lambda x: x[1]).mean()
 
         area_map = folium.Map(location=(start_lat, start_lon), zoom_start=11)
+        legendname = EV_britain().description[feature_var]
 
-        try:
-            legendname = EV_britain().description[feature_var]
-            print("this is the try")
-
-        except:
-            legendname = EV_britain().description[feature_var]
-            print("this is the except")
+        # try:
+        #     legendname = EV_britain().description[feature_var]
+        #     #print("this is the try")
+        #
+        # except:
+        #     legendname = EV_britain().description[feature_var]
+        #     #print("this is the except")
 
         area_map.choropleth(
             geo_data='search.geojson',
@@ -393,9 +394,15 @@ def plot_area(merged_df, feature_var, *args):
             name="areas",
             legend_name=legendname)
 
+        folium.Marker(location=(lat,long)).add_to(area_map)
+
         folium.LayerControl().add_to(area_map)
         area_map.save("search.html")
 
     except:
+
         print("This is not a council area in London")
-        print(legendname)
+
+
+def pcd_dict(df):
+    return {pcd: msoa for pcd, msoa in zip(df.pcds, df.msoa11cd)}

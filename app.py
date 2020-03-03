@@ -1,7 +1,15 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
+import plotly.graph_objs as go
+import joblib
 
 import pandas as pd
 import json
@@ -9,174 +17,270 @@ from shapely.geometry import Polygon
 import folium
 from src.functions import functions_for_project as ffp
 from src.data import data_dictionary as data_d
+import numpy as np
+import requests
+
+
+# In[2]:
+
+
+df = pd.read_csv(
+    'http://www.data4apurpose.com/client_html/full_processed_data.csv')
+
+
+# In[3]:
+
 
 msoa_uk = ffp.load_geojson(
     'http://www.data4apurpose.com/client_html'
-    '/Middle_Layer_Super_Output_Areas_December_2011_Boundaries_EW_BFC_ultra_simple.geojson')
-
-df = pd.read_csv('http://www.data4apurpose.com/client_html/full_processed_data.csv')
-central_london = ['City of London', 'Camden', 'Greenwich', 'Hackney', 'Hammersmith and Fulham', 'Islington',
-                  'Kensington and Chelsea', 'Lambeth', 'Lewisham', 'Southwark', 'Tower Hamlets', 'Wandsworth',
-                  'Westminster']
-
-# scaler = StandardScaler()
-# chrg_select = pd.DataFrame(ppf.ColumnSelector('charge_points').fit_transform(df).values.reshape(-1,1))
-# df['charge_points'] = ppf.FeatureLogTransform().fit_transform(chrg_select)
+    '/Middle_Layer_Super_Output_Areas_December_2011_Boundaries_EW_BFC_ultra_simple.geojson'
+)
 
 
-df = pd.merge(df, msoa_uk, left_on='msoa11cd', right_on='properties.msoa11cd')
+# In[4]:
 
-lad = [{'label': area, 'value': area} for area in df.lad13nm.unique()]
 
 data_diction = data_d.EV_britain().description
 
 
-# Function to extract centroids from polygons and multipolygons
-def centroid_calc(x):
-    if x['geometry.type'] == "Polygon":
-        lat = Polygon(x['geometry.coordinates'][0]).centroid.xy[1][0]
-        long = Polygon(x['geometry.coordinates'][0]).centroid.xy[0][0]
-        return lat, long
-    else:
-
-        lat = Polygon(x['geometry.coordinates'][0][0]).centroid.xy[1][0]
-        long = Polygon(x['geometry.coordinates'][0][0]).centroid.xy[0][0]
-
-        return lat, long
+# In[ ]:
 
 
-#
-#
-def plot_area(merged_df, feature_var, *args):
-    try:
-        search_area = merged_df[merged_df['properties.msoa11nm'].str.contains('|'.join(args))]
-        search_area_json = ffp.df_to_geojson(search_area,
-                                             ['properties.msoa11cd', 'properties.msoa11nm', 'properties.objectid',
-                                              'properties.st_areashape', 'properties.st_lengthshape'])
-
-        with open('search.geojson', 'w') as json_file:
-            json.dump(search_area_json, json_file)
-
-        start_lat = search_area.apply(centroid_calc, axis=1).apply(lambda x: x[0]).mean()
-        start_lon = search_area.apply(centroid_calc, axis=1).apply(lambda x: x[1]).mean()
-
-        area_map = folium.Map(location=(start_lat, start_lon), zoom_start=11)
-
-        area_map.choropleth(geo_data='search.geojson', data=search_area,
-                            columns=["properties.msoa11cd", feature_var],
-                            key_on='feature.properties.msoa11cd', fill_color='Spectral_r', highlight=True, name="areas",
-                            legend_name=data_d.EV_britain().description[feature_var])
-
-        folium.LayerControl().add_to(area_map)
-        area_map.save("search.html")
-
-    except:
-        print("This is not a council area in London")
+#pcd_dict = pd.read_csv("./data/raw/geo_spatial/pcd_msoa.csv")
 
 
-# print(data_d.EV_britain().description["income_score"])
-# print(plot_area(merged_df,"crime_score","Southwark"))
+# In[5]:
+
+
+central_london = [
+    'City of London', 'Camden', 'Greenwich', 'Hackney',
+    'Hammersmith and Fulham', 'Islington', 'Kensington and Chelsea', 'Lambeth',
+    'Lewisham', 'Southwark', 'Tower Hamlets', 'Wandsworth', 'Westminster'
+]
+
+greater_london = [
+    'Croydon', 'Sutton', 'Brent', 'Ealing', 'Hounslow', 'Richmond', 'Kingston',
+    'Merton', 'Bromley', 'Bexley', 'Havering', 'Barking and Dagenham',
+    'Redbridge', 'Newham', 'Waltham Forest', 'Haringey', 'Enfield', 'Barnet',
+    'Harrow', 'Hillingdon'
+]
+
+lad = [{'label': area, 'value': area} for area in df.lad13nm.unique()]
+
+
+# In[6]:
+
+
+logr_model = joblib.load('./models/logistic_regression_model')
+
+
+# In[7]:
+
+
+df = pd.merge(df, msoa_uk, left_on='msoa11cd', right_on='properties.msoa11cd')
+
+
+# In[14]:
 
 
 app = dash.Dash('__name__')
 server = app.server
 
-app.layout = html.Div([html.Div(
-    [html.H1('Correlations'),
-     dcc.Graph(id='graph'),
-     html.H3('Feature'),
-     dcc.Dropdown(id='var1', value='income_score', options=[{'label': x, 'value': x} for x in df.columns[4:]]),
-     html.Div(id='text1', children='...waiting'),
-     html.H3('Target Variable'),
-     dcc.Dropdown(id='var2', value='charge_points', options=[{'label': x, 'value': x} for x in df.columns[4:]]),
-     html.Div(id='text2', children='...waiting')
-     ], style={'width': '50%', 'display': 'inline-block'}),
+app.layout = html.Div([
+    html.Div([
+        html.H1('Predicting EV charge points'),
+        dcc.Graph(id='corr_graph'),
+        html.Div([dcc.RadioItems(id='log_yscale',options=[{'label':'Logarithmic y-axis','value':'log'},
+                                               {'label':'Linear y-axis scale','value':'linear'}],value='linear'),
+        dcc.RadioItems(id='log_xscale',options=[{'label':'Logarithmic x-axis','value':'log'},
+                                               {'label':'Linear x-axis scale','value':'linear'}],value='linear')]),
+        html.H3('Feature'),
+        dcc.Dropdown(id='var1',
+                     value='total_netafterhsing',
+                     options=[{
+                         'label': x,
+                         'value': x
+                     } for x in df.columns[4:]]),
+        html.Div(id='text1', children='...waiting'),
+        html.H3('Target Variable'),
+        dcc.Dropdown(id='var2',
+                     value='2019_q2',
+                     options=[{
+                         'label': x,
+                         'value': x
+                     } for x in df.columns[4:]]),
+        html.Div(id='text2', children='...waiting')
+    ],
+        style={
+        'width': '50%',
+                 'display': 'inline-block'
+    }),
+    html.Div([
+        html.H1("Mapping"),
+        html.Iframe(id='map',
+                    srcDoc=open('search.html', 'r').read(),
+                    width='100%',
+                    height='500px'),
+        dcc.Dropdown(
+            id='local_a', value=["Tower Hamlets"], options=lad, multi=True),#central_london+greater_london
+        html.H3("Enter your post code here"),
+        dcc.Input(id="postcode",value="CR0 2GL",disabled=False),
+        html.Button(id='submit-button', n_clicks=0, children='Submit'),
+        html.Button(id='reset-button', n_clicks=0, children='Reset'),
+        html.Div(id="lad_loc",children="No Local Authority"),
+        html.Div(id="msoa_loc",children="No MSOA"),
+        html.Div(id="result",children="No result"),
+        html.Div(id="prob",children="No probability")
+    ],
+        style={
+        'width': '50%',
+                 'float': 'right',
+                 'display': 'inline-block'
+    })
+])
 
-    html.Div(
-        [html.H1("Mapping"),
-         html.Iframe(id='map', srcDoc=open('search.html', 'r').read(), width='100%', height='500px'),
-         dcc.Dropdown(id='local_a', value=central_london, options=lad, multi=True)
-         ], style={'width': '50%', 'float': 'right', 'display': 'inline-block'})
-]
-)
+
+# In[16]:
+
+
+@app.callback([
+    Output('result', 'children'),
+    Output('msoa_loc', 'children'),
+    Output('lad_loc', 'children'),
+    Output('prob', 'children'),
+    Output('postcode', 'disabled')
+], [Input('postcode', 'value'),
+    Input('submit-button', 'n_clicks')])
+def find_pcd(value, clicks):
+    the_text = "No result"
+    msoa_description = "No MSOA"
+    lad_description = "No Local Authority"
+    prediction_prob = "No probability"
+    disabled = False
+    url = "https://api.postcodes.io/postcodes/"+value
+    f = requests.get(url).json()
+    msoa_nm = f['result']['msoa']
+    if clicks > 0:
+
+        #msoa = ffp.pcd_dict(pcd_dict)[value]
+        msoa_description = f"This is in the MSOA: {df[df.msoa11nm == msoa_nm]['msoa11nm'].values[0]}"
+        lad_description = f"This is in the Local Authority of {df[df.msoa11nm == msoa_nm]['lad13nm'].values[0]}"
+        X_test = df[df.msoa11nm == msoa_nm].loc[:, "income_score":"metropolitan"]
+        prediction_prob = f"There is a {str(round(logr_model.predict_proba(X_test)[0][1]*100,1))} % probability"
+        prediction = logr_model.predict(X_test)[0]
+        disabled = True
+        if prediction == 1:
+            the_text = "This area is LIKELY to have a charge point"
+        else:
+            the_text = "This area is NOT LIKELY to have a charge point"
+
+    return (the_text, msoa_description, lad_description, prediction_prob,disabled)
+
+
+@app.callback(
+    [Output('submit-button', 'n_clicks'),
+     Output('postcode', 'value')], [Input('reset-button', 'n_clicks')])
+def reset(value):
+    if value > 0:
+        value = 0
+    
+    return (0,"CR0 2GL")
 
 
 @app.callback(Output('text1', 'children'), [Input('var1', 'value')])
 def definitions(value):
     return data_diction[value]
-    # return value
 
 
 @app.callback(Output('text2', 'children'), [Input('var2', 'value')])
 def definitions(value):
     return data_diction[value]
-    # return value
 
 
-@app.callback(Output('map', 'srcDoc'), [Input('local_a', 'value'), Input('var2', 'value')])
-def remap(area, target):
-    plot_area(df, target, *area)
-    # print(*area,target)
+@app.callback(Output('map', 'srcDoc'),
+              [Input('local_a', 'value'),
+               Input('var2', 'value'),
+              Input('postcode', 'value'),
+              Input('submit-button', 'n_clicks')])
+def remap(area, target,postcode,clicks):
+    if clicks > 0:
+        
+        url = "https://api.postcodes.io/postcodes/"+postcode
+        f = requests.get(url).json()
+        lat = f['result']['latitude']
+        long = f['result']['longitude']
+
+        ffp.plot_area(df, target,lat,long,*area)
+        # print(*area,target)
     return open('search.html', 'r').read()
 
 
-@app.callback(Output('graph', 'figure'),
-              [Input('var1', 'value'), Input('var2', 'value'), Input('local_a', 'value')])
-def clean_data(x_value, y_value, ladname):
+@app.callback(Output('corr_graph', 'figure'), [
+    Input('var1', 'value'),
+    Input('var2', 'value'),
+    Input('local_a', 'value'),
+    Input('log_yscale', 'value'),
+    Input('log_xscale', 'value')
+])
+def plot_corr(x_value, y_value, ladname, yscale, xscale):
     # print(df[value2])
-    return {
-        'data': [
-            dict(
-                x=df[x_value],
-                y=df[y_value],
-                # text=merged_df[merged_df['lad13nm'] == i]['metropolitan'],
-                name='Entire UK',
-                mode='markers',
-                opacity=0.7,
-                marker={
-                    'color': 'red',
-                    'size': 4,
-                    'line': {'width': 0.5, 'color': 'black'}
-                },
+    return go.Figure(data=[
+        go.Scatter(x=df[x_value],
+                   y=df[y_value],
+                   mode='markers',
+                   name='Entire UK',
+                   opacity=0.7,
+                   marker=go.scatter.Marker(color='red',
+                                            size=4,
+                                            line=dict(width=0.5,
+                                                      color='black'))),
+        go.Scatter(
+            x=df[df['lad13nm'].str.contains('|'.join(ladname))][x_value],
+            y=df[df['lad13nm'].str.contains('|'.join(ladname))][y_value],
+            text="ddd",
+            name='Local Authorities Selected',
+            mode='markers',
+            opacity=1,
+            marker=go.scatter.Marker(color='green',
+                                     size=6,
+                                     line=dict(width=0.5, color='black')))
+    ],
+                     layout=go.Layout(xaxis={
+                         'type': xscale,
+                         'title': x_value
+                     },
+                                      yaxis={
+                                          'type': yscale,
+                                          'title': y_value
+                                      },
+                                      margin={
+                                          'l': 40,
+                                          'b': 30,
+                                          't': 20,
+                                          'r': 20
+                                      },
+                                      legend={
+                                          'x': 0,
+                                          'y': 1
+                                      },
+                                      hovermode='closest'))
 
-            ),
-            dict(
-                x=df[df['lad13nm'].str.contains('|'.join(ladname))][x_value],
-                y=df[df['lad13nm'].str.contains('|'.join(ladname))][y_value],
-                # text=merged_df[merged_df['lad13nm'] == i]['metropolitan'],
-                name = 'Local Authorities Selected',
-                mode='markers',
-                opacity=1,
-                marker={
-                    'color': 'green',
-                    'size': 6,
-                    'line': {'width': 0.5, 'color': 'black'}
-                },
 
-            )
-        ],
-        'layout': dict(
-            xaxis={'type': 'linear', 'title': x_value},
-            yaxis={'type': 'linear', 'title': y_value},
-            margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
-            legend={'x': 0, 'y': 1},
-            hovermode='closest'
-        )
-    }
-
-
-#
-# app.layout = html.Div([html.H1(id='title',children='Hello'),
-#     html.Iframe(id='choropleth',srcDoc=open('data/processed/search.html','r').read(),width='100%',height='600'),
-#     html.Label('Dropdown'),
-#     dcc.Dropdown(id='my-drop',options=lad,value='Southwark'),
-#
-#     html.Div(id='intermediate-value')
-#
-#
-# ],style= {'width': '100%', 'display': 'inline-block'})
+# In[17]:
 
 
 if __name__ == "__main__":
     # webbrowser.open('http://127.0.0.1:8050/', new=0, autoraise=True)
-    app.run_server(debug=True)
+    app.run_server(port = 7050, debug=False)
+
+
+# In[ ]:
+
+
+# scaler = StandardScaler()
+# chrg_select = pd.DataFrame(ppf.ColumnSelector('charge_points').fit_transform(df).values.reshape(-1,1))
+# df['charge_points'] = ppf.FeatureLogTransform().fit_transform(chrg_select)
+
+# print(data_d.EV_britain().description["income_score"])
+# print(plot_area(merged_df,"crime_score","Southwark"))
+
