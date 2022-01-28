@@ -67,5 +67,4 @@ Below are the results:
     </tr>
 </table>
 
-[Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#readme)
-
+[Back to Beginning](https://github.com/cdenbowjr/ev_chargepoint_prediction#predicting-electric-vehicle-charge-points-locations-in-britain)
