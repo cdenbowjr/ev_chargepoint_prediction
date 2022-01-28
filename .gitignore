@@ -94,3 +94,7 @@ venv
 *.pyc
 
 test.py
+
+# Exclude database
+/database
+/docs/

@@ -78,8 +78,9 @@ class TransportAggregate(BaseEstimator, TransformerMixin):
 
 # Function to Load geojson file and convert to dataframe
 
+
 def load_geojson(filepath):
-    '''Function that loads a geojson file and converts it to a dataframe'''
+    """'''Function that loads a geojson file and converts it to a dataframe'''"""
     try:
         with open(filepath) as file:
             data = json.load(file)
@@ -126,6 +127,7 @@ def centroid_calc(x):
         return lat, long
 
 # Function to plot histograms with text
+
 
 def plot_hist_box(variable, dataframe, datadict,
                   shape=norm,
