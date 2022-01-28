@@ -12,7 +12,7 @@ The model was then used to further explored areas of potential for new EV charge
 
 Raw data was preprocessed in order to ultimately train and test a Logistic Regression classifier and statistical testing of feature coefficients were done to confirm the factors that increased or decreased the likelihood of EV charge point installation. 
 
-[click for the EDA app](https://evchargeapp-v2.uc.r.appspot.com/)
+[click for the EDA app](http://evcharge.herokuapp.com/)
 
 ------
 
@@ -72,7 +72,7 @@ ___
     <th align='right'>Next</th>
     <tr>
     	<td align='left' width='50%'>Summary</td>
-    	<td align='right' width="50%"><a href="business_problem.md#the-business-problem">The Business Problem >></a></td>
+    	<td align='right' width="50%"><a href="presentation-readme/business_problem.md#the-business-problem">The Business Problem >></a></td>
     </tr>
 </table>
 ____
