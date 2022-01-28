@@ -1,0 +1,280 @@
+# Data Dictionary
+
+| variable                        | descriptions                                                 |
+| ------------------------------- | ------------------------------------------------------------ |
+| msoa11cd                        | Middle Layer Super Output Areas (MSOA) code at December 2011 |
+| msoa11nm                        | Middle Layer Super Output Areas (MSOA) name at December 2011 |
+| lad13cd                         | Local Authority Districts (LAD) code as at 31 December 2013  |
+| lad13nm                         | Local Authority Districts (LAD) name as at 31 December 2013  |
+| income_score                    | measures the proportion of the population experiencing deprivation  relating to low income. The definition of low income used includes both those  people that are out-of-work, and those that are in work but who have low  earning |
+| employment_score                | measures the proportion of the working-age population in an area  involuntarily excluded from the labour market. This includes people who would  like to work but are unable to do so due to unemployment, sickness or  disability, or caring responsibilities |
+| education_score                 | measures the lack of attainment and skills in the local population |
+| health_score                    | measures the risk of premature death and the impairment of quality of  life through poor physical or mental health. The domain measures morbidity,  disability and premature mortality but not aspects of behaviour or  environment that may be predictive of future health deprivation |
+| crime_score                     | measures the risk of personal and  material victimisation at local level |
+| housebar_score                  | measures the physical and financial accessibility of housing and local  services |
+| livenv_score                    | measures the quality of the local environment                |
+| idaci_score                     | measures the proportion of the population experiencing deprivation  relating to low income which affects children |
+| idaopi_score                    | measures the proportion of the population experiencing deprivation  relating to low income which affects old people |
+| chanyp_score                    | measures the lack of attainment and skills in the local population  relating to children and young people. |
+| adultskills_score               | measures the lack of attainment and skills in the local population  relating to adult skills. |
+| geo_bar_score                   | measures the physical and financial accessibility of housing and local  services based on physical proximity of local services (geographical  barriers) |
+| widerbar_score                  | measures the physical and financial accessibility of housing and local  services based on access to housing such as affordability (wider barriers) |
+| indoor_score                    | measures the quality of the local environment based on quality of housing  (indoors) |
+| outdoor_score                   | measures the quality of the local environment based on air quality and road traffic accidents  (outdoors) |
+| total_pop                       | total population size within a MSOA                          |
+| under16_pop                     | 16 and under population size within a MSOA                   |
+| 16_59_pop                       | 16-59 population size within a MSOA                          |
+| over60_pop                      | over 60 population size within a MSOA                        |
+| workingage_pop                  | working age population size within a MSOA                    |
+| total_inc                       | Total annual household income: sum of the gross income of every member of  the household plus any income from benefits such as Working Families Tax  Credit |
+| total_netinc                    | Net annual household income: sum of the net income of every member of the  household |
+| total_netb4hsing                | Net annual household income before housing costs (equivalised): rent,  water rates, mortgage interest, structural insurance and other service  charges |
+| total_netafterhsing             | Net annual household income after housing costs (equivalised): rent,  water rates, mortgage interest, structural insurance and other service  charges |
+| walk_to_work                    | average weekday number of journeys done by walking to work (home-based) |
+| walk_from_work                  | average weekday number of journeys done by walking from work (home-based) |
+| walk_to_empbus                  | average weekday number of journeys done by walking to employers business  (home-based) |
+| walk_from_empbus                | average weekday number of journeys done by walking from employers  business (home-based) |
+| walk_to_school                  | average weekday number of journeys done by walking to school (home-based) |
+| walk_from_school                | average weekday number of journeys done by walking from school  (home-based) |
+| walk_to_shopping                | average weekday number of journeys done by walking to shopping  (home-based) |
+| walk_from_shopping              | average weekday number of journeys done by walking from shopping  (home-based) |
+| walk_to_personbus               | average weekday number of journeys done by walking to personal business  (home-based) |
+| walk_from_personbus             | average weekday number of journeys done by walking from personal business  (home-based) |
+| walk_to_social                  | average weekday number of journeys done by walking to recreation  (home-based) |
+| walk_from_social                | average weekday number of journeys done by walking from recreation  (home-based) |
+| walk_to_friends                 | average weekday number of journeys done by walking to visit friends  (home-based) |
+| walk_from_friends               | average weekday number of journeys done by walking from visit friends  (home-based) |
+| walk_to_holiday                 | average weekday number of journeys done by walking to holidays  (home-based) |
+| walk_from_holiday               | average weekday number of journeys done by walking from holidays  (home-based) |
+| walk_to_work_nhb                | average weekday number of journeys done by walking to work (non  home-based) |
+| walk_from_work_nhb              | average weekday number of journeys done by walking from work (non  home-based) |
+| walk_to_empbus_nhb              | average weekday number of journeys done by walking to employers business  (non home-based) |
+| walk_from_empbus_nhb            | average weekday number of journeys done by walking from employers  business (non home-based) |
+| walk_to_school_nhb              | average weekday number of journeys done by walking to school (non  home-based) |
+| walk_from_school_nhb            | average weekday number of journeys done by walking from school (non  home-based) |
+| walk_to_shopping_nhb            | average weekday number of journeys done by walking to shopping (non  home-based) |
+| walk_from_shopping_nhb          | average weekday number of journeys done by walking from shopping (non  home-based) |
+| walk_to_personbus_nhb           | average weekday number of journeys done by walking to personal business  (non home-based) |
+| walk_from_personbus_nhb         | average weekday number of journeys done by walking from personal business  (non home-based) |
+| walk_to_social_nhb              | average weekday number of journeys done by walking to recreation (non  home-based) |
+| walk_from_social_nhb            | average weekday number of journeys done by walking from recreation (non  home-based) |
+| walk_to_holiday_nhb             | average weekday number of journeys done by walking to holidays (non  home-based) |
+| walk_from_holiday_nhb           | average weekday number of journeys done by walking from holidays (non  home-based) |
+| cycle_to_work                   | average weekday number of journeys done by cycling to work (home-based) |
+| cycle_from_work                 | average weekday number of journeys done by cycling from work (home-based) |
+| cycle_to_empbus                 | average weekday number of journeys done by cycling to employers business  (home-based) |
+| cycle_from_empbus               | average weekday number of journeys done by cycling from employers  business (home-based) |
+| cycle_to_school                 | average weekday number of journeys done by cycling to school (home-based) |
+| cycle_from_school               | average weekday number of journeys done by cycling from school  (home-based) |
+| cycle_to_shopping               | average weekday number of journeys done by cycling to shopping  (home-based) |
+| cycle_from_shopping             | average weekday number of journeys done by cycling from shopping  (home-based) |
+| cycle_to_personbus              | average weekday number of journeys done by cycling to personal business  (home-based) |
+| cycle_from_personbus            | average weekday number of journeys done by cycling from personal business  (home-based) |
+| cycle_to_social                 | average weekday number of journeys done by cycling to recreation  (home-based) |
+| cycle_from_social               | average weekday number of journeys done by cycling from recreation  (home-based) |
+| cycle_to_friends                | average weekday number of journeys done by cycling to visit friends  (home-based) |
+| cycle_from_friends              | average weekday number of journeys done by cycling from visit friends  (home-based) |
+| cycle_to_holiday                | average weekday number of journeys done by cycling to holidays  (home-based) |
+| cycle_from_holiday              | average weekday number of journeys done by cycling from holidays  (home-based) |
+| cycle_to_work_nhb               | average weekday number of journeys done by cycling to work (non  home-based) |
+| cycle_from_work_nhb             | average weekday number of journeys done by cycling from work (non  home-based) |
+| cycle_to_empbus_nhb             | average weekday number of journeys done by cycling to employers business  (non home-based) |
+| cycle_from_empbus_nhb           | average weekday number of journeys done by cycling from employers  business (non home-based) |
+| cycle_to_school_nhb             | average weekday number of journeys done by cycling to school (non  home-based) |
+| cycle_from_school_nhb           | average weekday number of journeys done by cycling from school (non  home-based) |
+| cycle_to_shopping_nhb           | average weekday number of journeys done by cycling to shopping (non  home-based) |
+| cycle_from_shopping_nhb         | average weekday number of journeys done by cycling from shopping (non  home-based) |
+| cycle_to_personbus_nhb          | average weekday number of journeys done by cycling to personal business  (non home-based) |
+| cycle_from_personbus_nhb        | average weekday number of journeys done by cycling from personal business  (non home-based) |
+| cycle_to_social_nhb             | average weekday number of journeys done by cycling to recreation (non  home-based) |
+| cycle_from_social_nhb           | average weekday number of journeys done by cycling from recreation (non  home-based) |
+| cycle_to_holiday_nhb            | average weekday number of journeys done by cycling to holidays (non  home-based) |
+| cycle_from_holiday_nhb          | average weekday number of journeys done by cycling from holidays (non  home-based) |
+| cardriver_to_work               | average weekday number of journeys done by driving to work (home-based) |
+| cardriver_from_work             | average weekday number of journeys done by driving from work (home-based) |
+| cardriver_to_empbus             | average weekday number of journeys done by driving to employers business  (home-based) |
+| cardriver_from_empbus           | average weekday number of journeys done by driving from employers  business (home-based) |
+| cardriver_to_school             | average weekday number of journeys done by driving to school (home-based) |
+| cardriver_from_school           | average weekday number of journeys done by driving from school  (home-based) |
+| cardriver_to_shopping           | average weekday number of journeys done by driving to shopping  (home-based) |
+| cardriver_from_shopping         | average weekday number of journeys done by driving from shopping  (home-based) |
+| cardriver_to_personbus          | average weekday number of journeys done by driving to personal business  (home-based) |
+| cardriver_from_personbus        | average weekday number of journeys done by driving from personal business  (home-based) |
+| cardriver_to_social             | average weekday number of journeys done by driving to recreation  (home-based) |
+| cardriver_from_social           | average weekday number of journeys done by driving from recreation  (home-based) |
+| cardriver_to_friends            | average weekday number of journeys done by driving to visit friends  (home-based) |
+| cardriver_from_friends          | average weekday number of journeys done by driving from visit friends  (home-based) |
+| cardriver_to_holiday            | average weekday number of journeys done by driving to holidays  (home-based) |
+| cardriver_from_holiday          | average weekday number of journeys done by driving from holidays  (home-based) |
+| cardriver_to_work_nhb           | average weekday number of journeys done by driving to work (non  home-based) |
+| cardriver_from_work_nhb         | average weekday number of journeys done by driving from work (non  home-based) |
+| cardriver_to_empbus_nhb         | average weekday number of journeys done by driving to employers business  (non home-based) |
+| cardriver_from_empbus_nhb       | average weekday number of journeys done by driving from employers  business (non home-based) |
+| cardriver_to_school_nhb         | average weekday number of journeys done by driving to school (non  home-based) |
+| cardriver_from_school_nhb       | average weekday number of journeys done by driving from school (non  home-based) |
+| cardriver_to_shopping_nhb       | average weekday number of journeys done by driving to shopping (non  home-based) |
+| cardriver_from_shopping_nhb     | average weekday number of journeys done by driving from shopping (non  home-based) |
+| cardriver_to_personbus_nhb      | average weekday number of journeys done by driving to personal business  (non home-based) |
+| cardriver_from_personbus_nhb    | average weekday number of journeys done by driving from personal business  (non home-based) |
+| cardriver_to_social_nhb         | average weekday number of journeys done by driving to recreation (non  home-based) |
+| cardriver_from_social_nhb       | average weekday number of journeys done by driving from recreation (non  home-based) |
+| cardriver_to_holiday_nhb        | average weekday number of journeys done by driving to holidays (non  home-based) |
+| cardriver_from_holiday_nhb      | average weekday number of journeys done by driving from holidays (non  home-based) |
+| carpassenger_to_work            | average weekday number of journeys done by car pooling to work  (home-based) |
+| carpassenger_from_work          | average weekday number of journeys done by car pooling from work  (home-based) |
+| carpassenger_to_empbus          | average weekday number of journeys done by car pooling to employers  business (home-based) |
+| carpassenger_from_empbus        | average weekday number of journeys done by car pooling from employers  business (home-based) |
+| carpassenger_to_school          | average weekday number of journeys done by car pooling to school  (home-based) |
+| carpassenger_from_school        | average weekday number of journeys done by car pooling from school  (home-based) |
+| carpassenger_to_shopping        | average weekday number of journeys done by car pooling to shopping  (home-based) |
+| carpassenger_from_shopping      | average weekday number of journeys done by car pooling from shopping  (home-based) |
+| carpassenger_to_personbus       | average weekday number of journeys done by car pooling to personal  business (home-based) |
+| carpassenger_from_personbus     | average weekday number of journeys done by car pooling from personal  business (home-based) |
+| carpassenger_to_social          | average weekday number of journeys done by car pooling to recreation  (home-based) |
+| carpassenger_from_social        | average weekday number of journeys done by car pooling from recreation  (home-based) |
+| carpassenger_to_friends         | average weekday number of journeys done by car pooling to visit friends  (home-based) |
+| carpassenger_from_friends       | average weekday number of journeys done by car pooling from visit friends  (home-based) |
+| carpassenger_to_holiday         | average weekday number of journeys done by car pooling to holidays  (home-based) |
+| carpassenger_from_holiday       | average weekday number of journeys done by car pooling from holidays  (home-based) |
+| carpassenger_to_work_nhb        | average weekday number of journeys done by car pooling to work (non  home-based) |
+| carpassenger_from_work_nhb      | average weekday number of journeys done by car pooling from work (non  home-based) |
+| carpassenger_to_empbus_nhb      | average weekday number of journeys done by car pooling to employers  business (non home-based) |
+| carpassenger_from_empbus_nhb    | average weekday number of journeys done by car pooling from employers  business (non home-based) |
+| carpassenger_to_school_nhb      | average weekday number of journeys done by car pooling to school (non  home-based) |
+| carpassenger_from_school_nhb    | average weekday number of journeys done by car pooling from school (non  home-based) |
+| carpassenger_to_shopping_nhb    | average weekday number of journeys done by car pooling to shopping (non  home-based) |
+| carpassenger_from_shopping_nhb  | average weekday number of journeys done by car pooling from shopping (non  home-based) |
+| carpassenger_to_personbus_nhb   | average weekday number of journeys done by car pooling to personal  business (non home-based) |
+| carpassenger_from_personbus_nhb | average weekday number of journeys done by car pooling from personal  business (non home-based) |
+| carpassenger_to_social_nhb      | average weekday number of journeys done by car pooling to recreation (non  home-based) |
+| carpassenger_from_social_nhb    | average weekday number of journeys done by car pooling from recreation  (non home-based) |
+| carpassenger_to_holiday_nhb     | average weekday number of journeys done by car pooling to holidays (non  home-based) |
+| carpassenger_from_holiday_nhb   | average weekday number of journeys done by car pooling from holidays (non  home-based) |
+| buscoach_to_work                | average weekday number of journeys done by bus/coach to work (home-based) |
+| buscoach_from_work              | average weekday number of journeys done by bus/coach from work  (home-based) |
+| buscoach_to_empbus              | average weekday number of journeys done by bus/coach to employers  business (home-based) |
+| buscoach_from_empbus            | average weekday number of journeys done by bus/coach from employers  business (home-based) |
+| buscoach_to_school              | average weekday number of journeys done by bus/coach to school  (home-based) |
+| buscoach_from_school            | average weekday number of journeys done by bus/coach from school  (home-based) |
+| buscoach_to_shopping            | average weekday number of journeys done by bus/coach to shopping  (home-based) |
+| buscoach_from_shopping          | average weekday number of journeys done by bus/coach from shopping  (home-based) |
+| buscoach_to_personbus           | average weekday number of journeys done by bus/coach to personal business  (home-based) |
+| buscoach_from_personbus         | average weekday number of journeys done by bus/coach from personal  business (home-based) |
+| buscoach_to_social              | average weekday number of journeys done by bus/coach to recreation  (home-based) |
+| buscoach_from_social            | average weekday number of journeys done by bus/coach from recreation  (home-based) |
+| buscoach_to_friends             | average weekday number of journeys done by bus/coach to visit friends  (home-based) |
+| buscoach_from_friends           | average weekday number of journeys done by bus/coach from visit friends  (home-based) |
+| buscoach_to_holiday             | average weekday number of journeys done by bus/coach to holidays  (home-based) |
+| buscoach_from_holiday           | average weekday number of journeys done by bus/coach from holidays  (home-based) |
+| buscoach_to_work_nhb            | average weekday number of journeys done by bus/coach to work (non  home-based) |
+| buscoach_from_work_nhb          | average weekday number of journeys done by bus/coach from work (non  home-based) |
+| buscoach_to_empbus_nhb          | average weekday number of journeys done by bus/coach to employers  business (non home-based) |
+| buscoach_from_empbus_nhb        | average weekday number of journeys done by bus/coach from employers  business (non home-based) |
+| buscoach_to_school_nhb          | average weekday number of journeys done by bus/coach to school (non  home-based) |
+| buscoach_from_school_nhb        | average weekday number of journeys done by bus/coach from school (non  home-based) |
+| buscoach_to_shopping_nhb        | average weekday number of journeys done by bus/coach to shopping (non  home-based) |
+| buscoach_from_shopping_nhb      | average weekday number of journeys done by bus/coach from shopping (non  home-based) |
+| buscoach_to_personbus_nhb       | average weekday number of journeys done by bus/coach to personal business  (non home-based) |
+| buscoach_from_personbus_nhb     | average weekday number of journeys done by bus/coach from personal  business (non home-based) |
+| buscoach_to_social_nhb          | average weekday number of journeys done by bus/coach to recreation (non  home-based) |
+| buscoach_from_social_nhb        | average weekday number of journeys done by bus/coach from recreation (non  home-based) |
+| buscoach_to_holiday_nhb         | average weekday number of journeys done by bus/coach to holidays (non  home-based) |
+| buscoach_from_holiday_nhb       | average weekday number of journeys done by bus/coach from holidays (non  home-based) |
+| rail_to_work                    | average weekday number of journeys done by rail to work (home-based) |
+| rail_from_work                  | average weekday number of journeys done by rail from work (home-based) |
+| rail_to_empbus                  | average weekday number of journeys done by rail to employers business  (home-based) |
+| rail_from_empbus                | average weekday number of journeys done by rail from employers business  (home-based) |
+| rail_to_school                  | average weekday number of journeys done by rail to school (home-based) |
+| rail_from_school                | average weekday number of journeys done by rail from school (home-based) |
+| rail_to_shopping                | average weekday number of journeys done by rail to shopping (home-based) |
+| rail_from_shopping              | average weekday number of journeys done by rail from shopping  (home-based) |
+| rail_to_personbus               | average weekday number of journeys done by rail to personal business  (home-based) |
+| rail_from_personbus             | average weekday number of journeys done by rail from personal business  (home-based) |
+| rail_to_social                  | average weekday number of journeys done by rail to recreation  (home-based) |
+| rail_from_social                | average weekday number of journeys done by rail from recreation  (home-based) |
+| rail_to_friends                 | average weekday number of journeys done by rail to visit friends  (home-based) |
+| rail_from_friends               | average weekday number of journeys done by rail from visit friends  (home-based) |
+| rail_to_holiday                 | average weekday number of journeys done by rail to holidays (home-based) |
+| rail_from_holiday               | average weekday number of journeys done by rail from holidays  (home-based) |
+| rail_to_work_nhb                | average weekday number of journeys done by rail to work (non home-based) |
+| rail_from_work_nhb              | average weekday number of journeys done by rail from work (non  home-based) |
+| rail_to_empbus_nhb              | average weekday number of journeys done by rail to employers business  (non home-based) |
+| rail_from_empbus_nhb            | average weekday number of journeys done by rail from employers business  (non home-based) |
+| rail_to_school_nhb              | average weekday number of journeys done by rail to school (non  home-based) |
+| rail_from_school_nhb            | average weekday number of journeys done by rail from school (non  home-based) |
+| rail_to_shopping_nhb            | average weekday number of journeys done by rail to shopping (non  home-based) |
+| rail_from_shopping_nhb          | average weekday number of journeys done by rail from shopping (non  home-based) |
+| rail_to_personbus_nhb           | average weekday number of journeys done by rail to personal business (non  home-based) |
+| rail_from_personbus_nhb         | average weekday number of journeys done by rail from personal business  (non home-based) |
+| rail_to_social_nhb              | average weekday number of journeys done by rail to recreation (non  home-based) |
+| rail_from_social_nhb            | average weekday number of journeys done by rail from recreation (non  home-based) |
+| rail_to_holiday_nhb             | average weekday number of journeys done by rail to holidays (non  home-based) |
+| rail_from_holiday_nhb           | average weekday number of journeys done by rail from holidays (non  home-based) |
+| no_car                          | number of people who do not own a car in the MSOA            |
+| one_car                         | number of people who own 1 car in the MSOA                   |
+| two_car                         | number of people who own 2 cars in the MSOA                  |
+| three+_car                      | number of people who own 3+ cars in the MSOA                 |
+| total_cars                      | number of cars in the MSOA                                   |
+| two_car_tot                     | total number of people who own 2 cars in the respective local authority  district (LAD) |
+| two_car_frac                    | fraction of people in the respective local authority who own 2 cars in  the current MSOA |
+| 2019_q2                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2019 Q2 in the  current MSOA |
+| 2019_q1                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2019 Q1 in the  current MSOA |
+| 2018_q4                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2018 Q4 in the  current MSOA |
+| 2018_q3                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2018 Q3 in the  current MSOA |
+| 2018_q2                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2018 Q2 in the  current MSOA |
+| 2018_q1                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2018 Q1 in the  current MSOA |
+| 2017_q4                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2017 Q4 in the  current MSOA |
+| 2017_q3                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2017 Q3 in the  current MSOA |
+| 2017_q2                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2017 Q2 in the  current MSOA |
+| 2017_q1                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2017 Q1 in the  current MSOA |
+| 2016_q4                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2016 Q4 in the  current MSOA |
+| 2016_q3                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2016 Q3 in the  current MSOA |
+| 2016_q2                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2016 Q2 in the  current MSOA |
+| 2016_q1                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2016 Q1 in the  current MSOA |
+| 2015_q4                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2015 Q4 in the  current MSOA |
+| 2015_q3                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2015 Q3 in the  current MSOA |
+| 2015_q2                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2015 Q2 in the  current MSOA |
+| 2015_q1                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2015 Q1 in the  current MSOA |
+| 2014_q4                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2014 Q4 in the  current MSOA |
+| 2014_q3                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2014 Q3 in the  current MSOA |
+| 2014_q2                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2014 Q2 in the  current MSOA |
+| 2014_q1                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2014 Q1 in the  current MSOA |
+| 2013_q4                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2013 Q4 in the  current MSOA |
+| 2013_q3                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2013 Q3 in the  current MSOA |
+| 2013_q2                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2013 Q2 in the  current MSOA |
+| 2013_q1                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2013 Q1 in the  current MSOA |
+| 2012_q4                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2012 Q4 in the  current MSOA |
+| 2012_q3                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2012 Q3 in the  current MSOA |
+| 2012_q2                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2012 Q2 in the  current MSOA |
+| 2012_q1                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2012 Q1 in the  current MSOA |
+| 2011_q4                         | Ultra low emission vehicles (ULEVs) licensed at the end of 2011 Q4 in the  current MSOA |
+| growth                          | absolute increase in the number of ULEV from 2011 q4 to 2019 q2 |
+| num_parks                       | number of parks within MSOA according to foursquare API      |
+| num_parking                     | number of car parks within MSOA according to foursquare API  |
+| num_train_st                    | number of train stations within MSOA according to foursquare API |
+| num_gas_st                      | number of gas/service stations within MSOA according to foursquare API |
+| num_hotels                      | number of hotels within MSOA according to foursquare API     |
+| num_supermarkets                | number of supermarkets within MSOA according to foursquare API |
+| park_distance                   | average distance of a park from the centre of the MSOA       |
+| parking_distance                | average distance of a car park from the centre of the MSOA   |
+| train_st_distance               | average distance of a train station from the centre of the MSOA |
+| gas_st_distance                 | average distance of a gas/service station from the centre of the MSOA |
+| hotel_distance                  | average distance of a hotel from the centre of the MSOA      |
+| supermarkets_distance           | average distance of a supermarket from the centre of the MSOA |
+| st_areashape                    | MSOA geographic area in square meters                        |
+| st_lengthshape                  | MSOA geographic perimeter in meters                          |
+| elec_d_con                      | 2018 domestic electricity consumption in respective MSOA (kWh) |
+| d_meters                        | number of domestic electricity meters in respective MSOA     |
+| elec_d_con_mean                 | mean 2018 domestic electricity consumption in respective MSOA (kWh per  meter) |
+| elec_d_con_mdn                  | median 2018 domestic electricity consumption in respective MSOA (kWh per  meter) |
+| elec_nd_con                     | 2018 non-domestic electricity consumption in respective MSOA (kWh) |
+| nd_meters                       | number of non-domestic electricity meters in respective MSOA |
+| elec_nd_con_mean                | mean 2018 non-domestic electricity consumption in respective MSOA (kWh  per meter) |
+| elec_nd_con_mdn                 | mean 2018 non-domestic electricity consumption in respective MSOA (kWh  per meter) |
+| residential_ratio               | ratio of 2018 domestic electricity consumption and non-domestic  electricity consumption in respective MSOA |
+| residential_meter_ratio         | ratio of number of domestic electricity meters and number of non-domestic  electricity meters in respective MSOA |
+| residential_mdn_ratio           | ratio of mean 2018 domestic electricity consumption and mean 2018  non-domestic electricity consumption in respective MSOA |
+| residential_mean_ratio          | ratio of median 2018 domestic electricity consumption and median 2018  non-domestic electricity consumption in respective MSOA |
+| region                          | English region associated with MSOA                          |
+| metropolitan                    | whether the MSOA is classified as a metropolitan area        |
+| charge_points                   | Number of charge points within the MSOA                      |
