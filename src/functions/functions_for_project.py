@@ -29,7 +29,7 @@ from tabulate import tabulate
 
 # Data dictionary
 try:
-    from src.data.data_dictionary import EV_britain
+    from src.data.data_dictionary import ev_britain
 except:
     print("hello")
 
@@ -376,7 +376,7 @@ def plot_area(merged_df, feature_var,lat=1,long=1, *args):
                                       axis=1).apply(lambda x: x[1]).mean()
 
         area_map = folium.Map(location=(start_lat, start_lon), zoom_start=11)
-        legendname = EV_britain().description[feature_var]
+        legendname = ev_britain().description[feature_var]
 
         # try:
         #     legendname = EV_britain().description[feature_var]

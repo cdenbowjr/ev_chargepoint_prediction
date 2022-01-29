@@ -10,6 +10,7 @@ scikit-learn = "==0.22.1"
 joblib = "*"
 plotly = "*"
 requests = "*"
+dash-bootstrap-components = "*"
 
 [dev-packages]
 pipenv-to-requirements = "*"

@@ -4,7 +4,7 @@ import requests
 import re
 import folium
 from shapely.geometry import Polygon
-from src.data.data_dictionary import EV_britain
+from src.data.data_dictionary import ev_britain
 
 
 def load_geojson(filepath):
@@ -72,7 +72,7 @@ def plot_area(merged_df, feature_var, lat=1, long=1, *args):
                                       axis=1).apply(lambda x: x[1]).mean()
 
         area_map = folium.Map(location=(start_lat, start_lon), zoom_start=11)
-        legend_name = EV_britain().description[feature_var]
+        legend_name = ev_britain.description[feature_var]
 
         area_map.choropleth(
             geo_data='search.geojson',
