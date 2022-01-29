@@ -1,4 +1,4 @@
-from src.data import preprocessing_functions as ppf
+from src.data import preprocessing as ppf
 
 import pandas as pd
 from sklearn.pipeline import FeatureUnion, make_pipeline

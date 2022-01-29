@@ -3,6 +3,7 @@ import pandas as pd
 import requests
 import re
 import folium
+from folium import Map, Marker, LayerControl, Choropleth
 from shapely.geometry import Polygon
 from src.data.data_dictionary import ev_britain
 
@@ -71,10 +72,10 @@ def plot_area(merged_df, feature_var, lat=1, long=1, *args):
         start_lon = search_area.apply(centroid_calc,
                                       axis=1).apply(lambda x: x[1]).mean()
 
-        area_map = folium.Map(location=(start_lat, start_lon), zoom_start=11)
+        area_map = Map(location=(start_lat, start_lon), zoom_start=11)
         legend_name = ev_britain.description[feature_var]
 
-        area_map.choropleth(
+        Choropleth(
             geo_data='search.geojson',
             data=search_area,
             columns=["properties.msoa11cd", feature_var],
@@ -82,11 +83,11 @@ def plot_area(merged_df, feature_var, lat=1, long=1, *args):
             fill_color='Spectral_r',
             highlight=True,
             name="areas",
-            legend_name=legend_name)
+            legend_name=legend_name).add_to(area_map)
 
-        folium.Marker(location=(lat, long)).add_to(area_map)
+        Marker(location=(lat, long)).add_to(area_map)
 
-        folium.LayerControl().add_to(area_map)
+        LayerControl().add_to(area_map)
         area_map.save("search.html")
 
     except KeyError:

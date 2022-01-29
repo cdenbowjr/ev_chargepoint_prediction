@@ -10,6 +10,7 @@ from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 
 from src.data.data_dictionary import ev_britain
+from src.production.general import generate_random_location
 from src.production.plotting import load_geojson, plot_area
 from src.production.navigation_bar import navbar_style, navbar
 from src.production.layout import correlation_graph, geographic_map
@@ -30,9 +31,7 @@ central_london = ev_britain.central_london
 greater_london = ev_britain.greater_london
 
 # GET RANDOM LOCATION
-random_url = "http://api.postcodes.io/random/postcodes"
-random_request = requests.get(random_url).json()['result']
-random_postcode, random_district = random_request['postcode'], random_request['admin_district']
+random_postcode, random_district = generate_random_location(df)
 
 # GET PREDICTIVE MODEL
 logr_model = joblib.load('./models/logistic_regression_model')
@@ -53,7 +52,6 @@ app.layout = html.Div([
 
 
 # CREATE APP INTERACTIVITY
-
 @app.callback([
     Output('result', 'children'),
     Output('msoa_loc', 'children'),
@@ -90,11 +88,10 @@ def find_pcd(value, clicks):
     [Output('submit-button', 'n_clicks'),
      Output('postcode', 'value'), Output('local_a', 'value')], [Input('reset-button', 'n_clicks')])
 def reset(value):
-    url = "http://api.postcodes.io/random/postcodes"
-    f = requests.get(url).json()
+    postcode, admin_district = generate_random_location(df)
     if value > 0:
         value = 0
-    return value, f['result']['postcode'], [f['result']['admin_district']]
+    return value, postcode, [admin_district]
 
 
 @app.callback(Output('text1', 'children'), [Input('var1', 'value')])
