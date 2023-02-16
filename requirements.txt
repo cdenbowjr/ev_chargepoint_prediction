@@ -37,4 +37,4 @@ six==1.14.0
 sklearn==0.0
 tabulate==0.8.6
 urllib3==1.26.5
-Werkzeug==1.0.0
+Werkzeug==2.2.3
