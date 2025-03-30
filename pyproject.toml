@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ev-chargepoint-prediction"
+version = "0.1.0"
+description = "This project is about predicting the propensity for electric vehicle charge points to be installed in the UK from 2018 data"
+authors = ["Charles Denbow <charles.denbow@gmail.com>"]
+license = "Talla Inc."
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
